@@ -1,0 +1,25 @@
+//
+// gRPC service definition used to connect to pipeline and pull
+// telemetry in desired form.
+//
+// Build go binding as follows:
+// protoc --plugin=<path>/protoc-gen-go --go_out=plugins=grpc:. xport_grpc_out.proto
+//
+
+syntax = "proto3";
+
+package main;
+
+message SubJSONReqMsg {
+    int64 ReqId = 1;
+}
+
+message SubJSONRepMsg {
+    bytes Data = 1;
+    int64 ReqId = 2;
+}
+
+service gRPCOut {
+    // Server side telemetry streaming
+    rpc Pull(SubJSONReqMsg) returns(stream SubJSONRepMsg) {};
+}

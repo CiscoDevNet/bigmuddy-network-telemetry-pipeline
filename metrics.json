@@ -1,0 +1,128 @@
+[
+	{
+		"basepath" : "Cisco-IOS-XR-infra-statsd-oper:infra-statistics/interfaces/interface/latest/generic-counters",
+		"spec" : {
+			"fields" : [
+				{"name" : "interface-name", "tag" : true},
+				{"name" : "packets-received"},
+				{"name" : "bytes-received"},
+				{"name" : "packets-sent", "track": true},
+				{"name" : "bytes-sent"},
+				{"name" : "output-drops"},
+				{"name" : "output-queue-drops"},
+				{"name" : "input-drops"},
+				{"name" : "input-queue-drops"},
+				{"name" : "input-errors"},
+				{"name" : "crc-errors"},
+				{"name" : "input-ignored-packets"},
+				{"name" : "output-errors"},
+				{"name" : "output-buffer-failures"},
+				{"name" : "carrier-transitions"}
+			]
+		}
+	},
+	{
+		"basepath" : "Cisco-IOS-XR-mpls-te-oper:mpls-te/tunnels/tunnel-auto-bandwidths/tunnel-auto-bandwidth",
+		"spec" : {
+			"fields" : [
+				{"name" : "tunnel-name", "tag" : true},
+				{"name" : "highest-bandwidth"},
+				{"name" : "last-sample-bandwidth"},
+				{"name" : "samples-collected"},
+				{"name" : "tunnel-requested-bandwidth"}
+			]
+		}
+	},
+	{
+		"basepath" : "Cisco-IOS-XR-qos-ma-oper:qos/interface-table/interface/output/statistics",
+		"spec" : {
+			"fields" : [
+				{"name" : "interface-name", "tag" : true},
+				{"name" : "policy-name", "tag" : true},
+				{
+					"name" : "class-stats",
+					"fields" : [
+						{"name" : "class-name", "tag" : true},
+						{
+							"name" : "general-stats",
+							"fields" : [
+								{"name" : "transmit-packets"},
+								{"name" : "transmit-bytes"},
+								{"name" : "total-drop-packets"},
+								{"name" : "total-drop-bytes"},
+								{"name" : "total-drop-rate"},
+								{"name" : "total-transmit-rate"}
+							]
+						},
+						{
+							"name" : "queue-stats-array",
+							"fields" : [
+								{"name" : "queue-id", "tag" : true},
+								{"name" : "tail-drop-packets"},
+								{"name" : "tail-drop-bytes"},
+								{
+									"name" : "queue-average-length",
+									"fields" : [
+										{"name" : "value"},
+										{"name" : "unit", "tag" : true}
+									]
+								},
+								{"name" : "random-drop-packets"},
+								{"name" : "random-drop-bytes"},
+								{"name" : "conform-packets"},
+								{"name" : "conform-bytes"},
+								{"name" : "exceed-packets"},
+								{"name" : "exceed-bytes"}
+							]
+						}
+					]
+				}
+			]
+		}
+	},
+	{
+		"basepath" : "Cisco-IOS-XR-procmem-oper:processes-memory/nodes/node/process-ids/process-id",
+		"spec" : {
+			"fields" : [
+				{"name":"node-name", "tag": true},
+				{"name":"name", "tag": true},
+				{"name":"text-seg-size"},
+				{"name":"data-seg-size"},
+				{"name":"stack-seg-size"},
+				{"name":"malloc-size"}
+			]
+		}
+	},
+	{
+		"basepath" : "Cisco-IOS-XR-nto-misc-oper:memory-summary/nodes/node/summary",
+		"spec" : {
+			"fields" : [
+				{"name":"node-name", "tag": true},
+				{"name":"ram-memory"},
+				{"name":"free-physical-memory"},
+				{"name":"system-ram-memory"},
+				{"name":"free-application-memory"}
+			]
+		}
+	},
+	{
+		"basepath" : "Cisco-IOS-XR-wdsysmon-fd-oper:system-monitoring/cpu-utilization",
+		"spec" : {
+			"fields" : [
+				{"name":"node-name", "tag": true},
+				{"name":"total-cpu-one-minute"},
+				{"name":"total-cpu-five-minute"},
+				{"name":"total-cpu-fifteen-minute"},
+				{
+					"name":"process-cpu",
+					"fields" : [
+						{"name":"process-name", "tag": true},
+						{"name":"process-cpu-one-minute"},
+						{"name":"process-cpu-five-minute"},
+						{"name":"process-cpu-fifteen-minute"}
+					]
+				}
+			]
+		}
+	}
+]

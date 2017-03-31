@@ -1,0 +1,11 @@
+global:
+  scrape_interval:    5s # By default, scrape targets every 5 seconds.
+
+scrape_configs:
+  - job_name: 'pipeline'
+    static_configs:
+      - targets: ['localhost:8989']
+
+  - job_name: 'prometheus'
+    static_configs:
+      - targets: ['localhost:9090']

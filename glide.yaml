@@ -1,0 +1,32 @@
+package: bigmuddy-network-telemetry-pipeline
+import:
+- package: github.com/Shopify/sarama
+- package: github.com/Sirupsen/logrus
+- package: github.com/dlintw/goconf
+- package: github.com/evalphobia/logrus_fluent
+- package: github.com/golang/protobuf
+  subpackages:
+  - jsonpb
+  - proto
+- package: github.com/influxdata/influxdb
+  subpackages:
+  - client/v2
+- package: github.com/prometheus/client_golang
+  subpackages:
+  - prometheus
+- package: golang.org/x/crypto
+  subpackages:
+  - ssh/terminal
+- package: golang.org/x/net
+  subpackages:
+  - context
+- package: google.golang.org/grpc
+  subpackages:
+  - credentials
+  - peer
+- package: gopkg.in/bsm/sarama-cluster.v2
+- package: github.com/cisco/bigmuddy-network-telemetry-proto
+  subpackages:
+  - proto_go
+  - proto_go/mdt_grpc_dialin
+  - proto_go/mdt_grpc_dialout
