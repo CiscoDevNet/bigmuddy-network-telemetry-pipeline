@@ -124,5 +124,111 @@
 				}
 			]
 		}
+	},
+	{
+		"basepath" : "Cisco-IOS-XR-qos-ma-oper:qos/nodes/node/policy-map/interface-table/interface/output/statistics",
+		"spec" : {
+			"fields" : [
+				{"name" : "interface-name", "tag" : true},
+				{"name" : "node-name", "tag" : true},
+				{"name" : "policy-name", "tag" : true},
+				{"name" : "satid"},
+				{"name" : "state"},
+				{"name" : "state-description"},
+				{"name" : "subscriber-group"},
+				{
+					"name" : "class-stats",
+					"fields" : [
+						{"name" : "child-policy",
+						 "fields" : [
+							{"name" : "content",
+							 "fields" : [
+								{"name" : "class-stats",
+								 "fields" : [
+									{"name" : "class-name", "tag" : true},
+									{"name" : "cac-state"},
+									{"name" : "counter-validity-bitmask"},
+									{
+										"name" : "general-stats",
+										"fields" : [
+											{"name" : "match-data-rate"},
+											{"name" : "pre-policy-matched-bytes"},
+											{"name" : "pre-policy-matched-packets"},
+											{"name" : "transmit-packets"},
+											{"name" : "transmit-bytes"},
+											{"name" : "total-drop-packets"},
+											{"name" : "total-drop-bytes"},
+											{"name" : "total-drop-rate"},
+											{"name" : "total-transmit-rate"}
+										]
+									},
+									{
+										"name" : "queue-instance-length",
+										"fields" : [
+											{"name" : "unit"},
+											{"name" : "value"}
+										]
+									},
+									{"name" : "queue-descr"},
+  									{
+										"name" : "queue-stats-array",
+										"fields" : [
+											{"name" : "queue-id"},
+											{"name" : "conform-packets"},
+											{"name" : "conform-bytes"},
+											{"name" : "conform-rate"},
+											{"name" : "exceed-packets"},
+											{"name" : "exceed-bytes"},
+											{"name" : "exceed-rate"},
+											{"name" : "max-threshold-bytes"},
+											{"name" : "max-threshold-packets"},
+											{
+												"name" : "queue-average-length",
+												"fields" : [
+													{"name" : "value"},
+													{"name" : "unit"}
+												]
+											},
+											{
+												"name" : "queue-instance-length",
+												"fields" : [
+													{"name" : "value"},
+													{"name" : "unit"}
+												]
+											},
+											{"name" : "random-drop-packets"},
+											{"name" : "random-drop-bytes"},
+											{"name" : "tail-drop-packets"},
+											{"name" : "tail-drop-bytes"}
+										]
+									},
+									{
+										"name" : "police-stats-array",
+										"fields" : [
+											{"name" : "conform-packets"},
+											{"name" : "conform-bytes"},
+											{"name" : "conform-rate"},
+											{"name" : "drop-packets"},
+											{"name" : "drop-bytes"},
+											{"name" : "exceed-packets"},
+											{"name" : "exceed-bytes"},
+											{"name" : "exceed-rate"},
+											{"name" : "parent-drop-packets"},
+											{"name" : "parent-drop-bytes"},
+											{"name" : "violate-packets"},
+											{"name" : "violate-bytes"},
+											{"name" : "violate-rate"}
+										]
+									}
+										]
+								}
+							]
+							}
+						]
+						}
+					]
+				}
+			]
+		}
 	}
 ]
