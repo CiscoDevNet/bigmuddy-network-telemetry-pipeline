@@ -31,7 +31,7 @@ wget https://storage.googleapis.com/golang/go1.8.1.linux-amd64.tar.gz
 sudo tar -C /usr/local -xzf go1.8.1.linux-amd64.tar.gz
 ```
 
-Create a workspace and set the set Go environment variables.
+Create a workspace and set the Go environment variables.
 
 ``` bash
 mkdir ~/go
