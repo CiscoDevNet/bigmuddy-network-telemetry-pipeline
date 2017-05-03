@@ -66,7 +66,7 @@ sudo ldconfig
 You can verify the protobuf compiler is installed with `protoc --version`
 
 ``` bash   
-~/$ protoc --version
+$ protoc --version
 libprotoc 3.3.0
 ```
 
@@ -120,7 +120,7 @@ $
 
 #### If they are not
 
-You'd need to download the proto files from the device and copy over.
+You will need to download the proto files from the device and copy over.
 
 #### Copy proto files to the staging 
 
@@ -133,7 +133,7 @@ cp -r cisco_ios_xr_controller_optics_oper ../staging
 
 ### Key mappings 
 
-Files ending in yang2proto_map.json found in staging contain the metadata required to map the keys received, from streaming devices, to the service that unmarshals the content of the message. Check out [Support for unmarshaling telemetry messages](/vendor/github.com/cisco/bigmuddy-network-telemetry-proto#support-for-unmarshaling-telemetry-messages). 
+Files ending in yang2proto_map.json found in staging contain the metadata required to map the keys received, from streaming devices, to the service that unmarshals the content of the message. Check out [Support for unmarshalling telemetry messages](/vendor/github.com/cisco/bigmuddy-network-telemetry-proto#support-for-unmarshaling-telemetry-messages). 
 
 There is one file already present; [cisco_ios_xr_yang2proto_map.json](vendor/github.com/cisco/bigmuddy-network-telemetry-proto/staging/cisco_ios_xr_yang2proto_map.json). Verify if it already has the key for the path of interest
 
@@ -149,7 +149,7 @@ $
 
 ### Generate Go code
 
-Generate the Go source code for this proto files with protoc. There is actually a script that will take care of this and some other things; [prep_golang.py](vendor/github.com/cisco/bigmuddy-network-telemetry-proto/prep_golang.py).
+Generate the Go source code for these proto files with protoc. There is actually a script that will take care of this among other things; [prep_golang.py](vendor/github.com/cisco/bigmuddy-network-telemetry-proto/prep_golang.py).
 
 ``` bash 
 $ cd $GOPATH/src/github.com/cisco/bigmuddy-network-telemetry-pipeline/vendor/github.com/cisco/bigmuddy-network-telemetry-proto/
