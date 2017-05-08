@@ -54,7 +54,7 @@ Install the Protocol Buffers compiler as depicted in here: [Protocol Buffers](ht
 ``` bash    
 sudo apt-get install autoconf automake libtool curl make g++ unzip
 git clone https://github.com/google/protobuf.git
- cd protobuf
+cd protobuf
 ./autogen.sh
 ./configure --prefix=/usr
 make
