@@ -276,6 +276,8 @@
 "RootOper.DHCPv6.Node.Server.Profile.ThrottleTable.ThrottleInfo": "Cisco-IOS-XR-ipv6-new-dhcpv6d-oper:dhcpv6/nodes/node/server/profiles/profile/throttle-infos/throttle-info",
 "RootOper.DHCPv6.Node.Server.Statistics": "Cisco-IOS-XR-ipv6-new-dhcpv6d-oper:dhcpv6/nodes/node/server/statistics",
 "RootOper.DHCPv6.Node.Server.VRF.Statistics": "Cisco-IOS-XR-ipv6-new-dhcpv6d-oper:dhcpv6/nodes/node/server/vrfs/vrf/statistics",
+"RootOper.DPA.Stats.Node.AsicStatistics.AsicStatisticsBrief.AsicStatisticsForNpuId": "Cisco-IOS-XR-fretta-bcm-dpa-npu-stats-oper:dpa/stats/nodes/node/asic-statistics/asic-statistics-for-npu-ids/asic-statistics-for-npu-id",
+"RootOper.DPA.Stats.Node.HwResourcesTable.HwResourcesData": "Cisco-IOS-XR-fretta-bcm-dpa-hw-resources-oper:dpa/stats/nodes/node/hw-resources-datas/hw-resources-data",
 "RootOper.ES_ACL.Active.List.ACL.ACLSequenceNumber": "Cisco-IOS-XR-es-acl-oper:es-acl/active/list/acls/acl/acl-sequence-numbers/acl-sequence-number",
 "RootOper.ES_ACL.Active.OOR.ACLSummary.Details": "Cisco-IOS-XR-es-acl-oper:es-acl/active/oor/acl-summary/details",
 "RootOper.ES_ACL.Active.OOR_ACL": "Cisco-IOS-XR-es-acl-oper:es-acl/active/oor-acls/oor-acl",
