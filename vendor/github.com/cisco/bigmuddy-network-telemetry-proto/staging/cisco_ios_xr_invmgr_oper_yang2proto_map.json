@@ -1,0 +1,5 @@
+[{"message": "inv_phy_entity_asset_info",
+"file": "cisco_ios_xr_invmgr_oper/inventory/racks/rack/attributes/inv_asset_bag/inv_phy_entity_asset_info.proto",
+"package": "cisco_ios_xr_invmgr_oper.inventory.racks.rack.attributes.inv_asset_bag",
+"encoding_path": "Cisco-IOS-XR-invmgr-oper:inventory/racks/rack/attributes/inv-asset-bag",
+"message_keys": "inv_phy_entity_asset_info_KEYS"}]
