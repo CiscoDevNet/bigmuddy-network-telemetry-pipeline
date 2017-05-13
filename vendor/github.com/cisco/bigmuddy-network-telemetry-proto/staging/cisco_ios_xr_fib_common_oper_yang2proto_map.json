@@ -1,0 +1,6 @@
+[{"file": "cisco_ios_xr_fib_common_oper/fib/nodes/node/protocols/protocol/fib_summaries/fib_summary/fib_sh_sum.proto",
+"encoding_path": "Cisco-IOS-XR-fib-common-oper:fib/nodes/node/protocols/protocol/fib-summaries/fib-summary",
+ "message_keys": "fib_sh_sum_KEYS",
+"package": "cisco_ios_xr_fib_common_oper.fib.nodes.node.protocols.protocol.fib_summaries.fib_summary",
+ "message": "fib_sh_sum",
+"schema": "RootOper.FIB.Node.Protocol.FIBSummary"}]

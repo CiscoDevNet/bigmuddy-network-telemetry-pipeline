@@ -289,6 +289,7 @@
 "RootOper.ExplicitPaths.Name": "Cisco-IOS-XR-ip-iep-oper:explicit-paths/names/name",
 "RootOper.FIB.Node.Protocol.ExternalClientSummary": "Cisco-IOS-XR-fib-common-oper:fib/nodes/node/protocols/protocol/external-client-summaries/external-client-summary",
 "RootOper.FIB.Node.Protocol.ExternalSummaryAll": "Cisco-IOS-XR-fib-common-oper:fib/nodes/node/protocols/protocol/external-summary-all",
+"RootOper.FIB.Node.Protocol.FIBSummary": "Cisco-IOS-XR-fib-common-oper:fib/nodes/node/protocols/protocol/fib-summaries/fib-summary",
 "RootOper.FIB.Node.Protocol.FRRLog.FRRInterface.Log": "Cisco-IOS-XR-fib-common-oper:fib/nodes/node/protocols/protocol/frr-log/frr-interfaces/frr-interface/logs/log",
 "RootOper.FIB.Node.Protocol.IssuState": "Cisco-IOS-XR-fib-common-oper:fib/nodes/node/protocols/protocol/issu-state",
 "RootOper.FIB.Node.Protocol.LocalLabel.ConflictsTable.Conflict": "Cisco-IOS-XR-fib-common-oper:fib/nodes/node/protocols/protocol/local-label/conflicts/conflict",
