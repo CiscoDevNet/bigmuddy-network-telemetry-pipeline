@@ -1,0 +1,6 @@
+[{"file": "cisco_ios_xr_ipv4_bgp_oper/bgp/instances/instance/instance_active/vrfs/vrf/afs/af/neighbor_af_table/neighbor/bgp_nbr_bag.proto",
+"encoding_path": "Cisco-IOS-XR-ipv4-bgp-oper:bgp/instances/instance/instance-active/vrfs/vrf/afs/af/neighbor-af-table/neighbor",
+"message": "bgp_nbr_bag",
+"message_keys": "bgp_nbr_bag_KEYS",
+"package": "cisco_ios_xr_ipv4_bgp_oper.bgp.instances.instance.instance_active.vrfs.vrf.afs.af.neighbor_af_table.neighbor",
+"schema": "RootOper.BGP.Instance.InstanceActive.VRF.AF.NeighborAFTable.Neighbor"}]
