@@ -1,0 +1,28 @@
+# How to build?
+#
+# docker build -f ./Kuberfile -t pipeline:<version> .
+#
+# Assumes the fully configured configurations will be supplied
+# in Kubernetes as a ConfigMap to /data/config
+# pipeline is now placed in /data in order to allow the create/delete
+# of other files which is otherwise not allowed by platforms such as
+# OpenShift where there are security implications.
+# ----------------------------------------------------
+
+FROM phusion/baseimage:v0.9.22
+
+MAINTAINER Remington Campbell <remcampb@cisco.com>
+
+# Use baseimage-docker's init system.
+CMD ["/sbin/my_init"]
+
+VOLUME ["/data"]
+VOLUME ["/data/config"]
+
+ADD pipeline /data/pipeline
+
+RUN mkdir /etc/service/pipeline
+ADD pipeline.sh /etc/service/pipeline/run
+
+# Clean up APT when done.
+# RUN apt-get clean && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
