@@ -16,11 +16,12 @@ MAINTAINER Remington Campbell <remcampb@cisco.com>
 # Use baseimage-docker's init system.
 CMD ["/sbin/my_init"]
 
+# Create ConfigMap directory, /data for consistency.
 VOLUME ["/data"]
-VOLUME ["/data/config"]
 
-ADD pipeline /data/pipeline
-
+# Add the pipeline executable
+ADD pipeline /usr/bin/pipeline
+# Add the runit script to execute pipeline
 RUN mkdir /etc/service/pipeline
 ADD pipeline.sh /etc/service/pipeline/run
 
