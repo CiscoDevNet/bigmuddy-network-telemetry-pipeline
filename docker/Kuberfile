@@ -18,5 +18,5 @@ VOLUME ["/data/config"]
 
 ADD pipeline /data/pipeline
 WORKDIR /data
-ENTRYPOINT ["pipeline"]
+ENTRYPOINT ["./pipeline"]
 CMD ["-log=pipeline.log", "-config=config/pipeline.conf", "-pem=config/pipeline_rsa"]
