@@ -16,7 +16,7 @@ MAINTAINER Remington Campbell <remcampb@cisco.com>
 VOLUME ["/data"]
 VOLUME ["/data/config"]
 
-ADD pipeline /data/pipeline
+ADD pipeline /pipeline
 WORKDIR /data
-ENTRYPOINT ["/data/pipeline"]
+ENTRYPOINT ["/pipeline"]
 CMD ["-log=/data/pipeline.log", "-config=/data/config/pipeline.conf", "-pem=/data/config/pipeline_rsa"]
