@@ -4,9 +4,10 @@
 #
 # Assumes the fully configured configurations will be supplied
 # in Kubernetes as a ConfigMap to /data/config
-# pipeline is now placed in /data in order to allow the create/delete
-# of other files which is otherwise not allowed by platforms such as
-# OpenShift where there are security implications.
+# pipeline is placed in / (root) but workdir is set to /data volume
+# in order to allow the create/delete of other files like models.txt
+# which is otherwise not allowed by platforms such as OpenShift
+# where there are security restrictions by default on permissions.
 # ----------------------------------------------------
 
 FROM bitnami/minideb:latest
