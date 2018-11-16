@@ -1,4 +1,119 @@
 [
+    
+    {
+		"basepath" : "Cisco-IOS-XR-sysadmin-envmon-ui:envmon/environment/oper/current/location/sensor_attributes",
+		"spec" : {
+			"fields" : [
+				{"name" : "location", "tag" : true},
+				{"name" : "sensor", "tag": true},
+				{
+					"name" : "alarm",  
+				        "fields" : [
+   						{"name" : "value"}
+					]
+
+                                },
+				{
+					"name" : "sensor-id",  
+				        "fields" : [
+   						{"name" : "value","tag":true}
+					]
+
+                                },
+				{
+					"name" : "value",  
+				        "fields" : [
+   						{"name" : "value"}
+					]
+
+                                }
+
+
+
+			]
+		}
+	},
+	{
+              "basepath": "Cisco-IOS-XR-sysadmin-envmon-ui:envmon/environment/oper/temperatures/location/sensor_attributes",
+              "spec": {
+                             "fields": [
+                                                            {"name": "location","tag": true},
+                                                            {"name": "sensor","tag": true},
+                                                            {
+                                                                        "name": "sensor-stats",
+                                                                        "fields": [
+                                                                          {"name": "sensor-id"},
+                                                                          {
+                                                                                                     "name": "alarm",
+                                                                                                     "fields":[
+                                                                                                                   {"name": "value"}
+                                                                                                     ]
+                                                                          },
+                                                                          {
+                                                                                                     "name": "temperature-value",
+                                                                                                     "fields": [
+                                                                                                                   {"name": "value"}
+                                                                                                     ]
+                                                                          },
+                                                                        {"name": "value"},
+                                                                        {"name": "critical-lo"},
+                                                                        {"name": "major-lo"},
+                                                                        {"name": "minor-lo"},
+                                                                        {"name": "major-hi"},
+                                                                        {"name": "minor-hi"},
+                                                                        {"name": "critical-hi"}
+                                                          ]
+                                           }
+                             ]
+              }
+	},
+    {
+		"basepath" : "Cisco-IOS-XR-sysadmin-envmon-ui:envmon/environment/oper/voltages/location/sensor_attributes",
+		"spec" : {
+			"fields" : [
+				{"name" : "location", "tag" : true},
+				{"name" : "sensor", "tag": true},
+				{
+					"name" : "alarm",  
+				        "fields" : [
+   						{"name" : "value"}
+					]
+
+                                },
+                                {"name" : "critical-hi"},
+				{"name" : "critical-lo"},
+				{"name" : "major-hi"},
+				{"name" : "major-lo"},
+				{"name" : "minor-hi"},
+				{"name" : "minor-lo"},
+				{
+					"name" : "sensor-id",  
+				        "fields" : [
+   						{"name" : "value"}
+					]
+
+                                },
+				{
+					"name" : "temperature-value",  
+				        "fields" : [
+   						{"name" : "value"}
+					]
+
+                                },
+				{
+					"name" : "value",  
+				        "fields" : [
+   						{"name" : "value"}
+					]
+
+                                }
+
+
+
+
+			]
+		}
+	},
 	{
 		"basepath" : "Cisco-IOS-XR-infra-statsd-oper:infra-statistics/interfaces/interface/latest/generic-counters",
 		"spec" : {
