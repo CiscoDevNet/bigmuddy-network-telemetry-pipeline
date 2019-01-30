@@ -24,7 +24,7 @@ import (
 	"flag"
 	"fmt"
 	log "github.com/Sirupsen/logrus"
-	telem "github.com/cisco/bigmuddy-network-telemetry-proto/proto_go"
+	telem "github.com/nleiva/telemetry-proto/proto_go"
 	"github.com/dlintw/goconf"
 	"github.com/evalphobia/logrus_fluent"
 	"github.com/prometheus/client_golang/prometheus"
