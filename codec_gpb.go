@@ -18,7 +18,7 @@ import (
 	log "github.com/Sirupsen/logrus"
 	telem "github.com/nleiva/telemetry-proto/proto_go"
 	pdt "github.com/nleiva/telemetry-proto/proto_go/old/telemetry"
-	"github.com/golang/protobuf/jsonpb"
+	"github.com/nleiva/protobuf/jsonpb"
 	"github.com/golang/protobuf/proto"
 	"reflect"
 	"regexp"

@@ -11,7 +11,7 @@ import (
 	"bytes"
 	"encoding/json"
 	"fmt"
-	samples "github.com/cisco/bigmuddy-network-telemetry-pipeline/mdt_msg_samples"
+	samples "github.com/nleiva/pipeline/mdt_msg_samples"
 	telem "github.com/nleiva/telemetry-proto/proto_go"
 	"github.com/dlintw/goconf"
 	"github.com/golang/protobuf/jsonpb"
