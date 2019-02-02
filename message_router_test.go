@@ -11,7 +11,7 @@ package main
 import (
 	"fmt"
 	log "github.com/Sirupsen/logrus"
-	telem "github.com/cisco/bigmuddy-network-telemetry-proto/proto_go"
+	telem "github.com/nleiva/telemetry-proto/proto_go"
 	"github.com/dlintw/goconf"
 	"testing"
 	"time"

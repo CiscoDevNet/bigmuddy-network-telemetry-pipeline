@@ -11,7 +11,7 @@ package main
 import (
 	"bytes"
 	"encoding/binary"
-	samples "github.com/cisco/bigmuddy-network-telemetry-pipeline/mdt_msg_samples"
+	samples "github.com/nleiva/pipeline/mdt_msg_samples"
 	"net"
 	"testing"
 	"time"

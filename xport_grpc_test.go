@@ -11,8 +11,8 @@ package main
 import (
 	"fmt"
 	log "github.com/Sirupsen/logrus"
-	telem "github.com/cisco/bigmuddy-network-telemetry-proto/proto_go"
-	dialin "github.com/cisco/bigmuddy-network-telemetry-proto/proto_go/mdt_grpc_dialin"
+	telem "github.com/nleiva/telemetry-proto/proto_go"
+	dialin "github.com/nleiva/telemetry-proto/proto_go/mdt_grpc_dialin"
 	"github.com/golang/protobuf/proto"
 	"golang.org/x/net/context"
 	"google.golang.org/grpc"

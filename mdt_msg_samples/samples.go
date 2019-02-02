@@ -14,7 +14,7 @@ import (
 	"bufio"
 	"encoding/json"
 	log "github.com/Sirupsen/logrus"
-	telem "github.com/cisco/bigmuddy-network-telemetry-proto/proto_go"
+	telem "github.com/nleiva/telemetry-proto/proto_go"
 	"github.com/golang/protobuf/jsonpb"
 	"github.com/golang/protobuf/proto"
 	"io/ioutil"
