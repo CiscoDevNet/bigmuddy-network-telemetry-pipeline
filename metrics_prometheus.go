@@ -75,7 +75,7 @@ func (p *metricsPrometheusOutputHandler) flushMetric(
 	})
 
 	if buf.Len() == 0 {
-		logCtx.Debug("metrics export (no metrics in msg): keys [%v]", tags)
+		logCtx.Debug(fmt.Sprintf("metrics export (no metrics in msg): keys [%v]", tags))
 		return
 	}
 
