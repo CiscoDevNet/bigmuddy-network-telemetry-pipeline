@@ -1,0 +1,3385 @@
+[   
+	{
+		"basepath" : "Cisco-IOS-XR-sysadmin-envmon-ui:environment/oper/current/location/sensor_attributes",
+		"spec" : {
+			"fields" : [
+				{"name" : "location", "tag" : true},
+				{"name" : "sensor", "tag": true},
+				{
+					"name" : "alarm",  
+				        "fields" : [
+   						{"name" : "value"}
+					]
+
+                                },
+				{
+					"name" : "sensor-id",  
+				        "fields" : [
+   						{"name" : "value","tag":true}
+					]
+
+                                },
+				{
+					"name" : "value",
+					"fields" : [
+   						{"name" : "value"}
+					]  
+
+                                }
+
+
+
+			]
+		}
+	},
+	{
+		"basepath" : "Cisco-IOS-XR-sysadmin-envmon-ui:environment/oper/temperatures/location/sensor_attributes",
+		"spec" : {
+			"fields" : [
+				{"name" : "location", "tag" : true},
+				{"name" : "sensor", "tag": true},
+				{
+					"name" : "alarm",  
+				        "fields" : [
+   						{"name" : "value"}
+					]
+
+                                },
+                                {"name" : "critical-hi"},
+				{"name" : "critical-lo"},
+				{"name" : "major-hi"},
+				{"name" : "major-lo"},
+				{"name" : "minor-hi"},
+				{"name" : "minor-lo"},
+				{
+					"name" : "sensor-id",  
+				        "fields" : [
+   						{"name" : "value"}
+					]
+
+                                },
+				{
+					"name" : "temperature-value",  
+				        "fields" : [
+   						{"name" : "value"}
+					]
+
+                                },
+				{"name" : "value"}
+
+
+
+			]
+		}
+	},
+	{
+		"basepath" : "Cisco-IOS-XR-sysadmin-envmon-ui:envmon/environment/oper/voltages/location/sensor_attributes",
+		"spec" : {
+			"fields" : [
+				{"name" : "location", "tag" : true},
+				{"name" : "sensor", "tag": true},
+				{
+					"name" : "alarm",  
+				        "fields" : [
+   						{"name" : "value"}
+					]
+
+                                },
+                                {"name" : "critical-hi"},
+				{"name" : "critical-lo"},
+				{"name" : "major-hi"},
+				{"name" : "major-lo"},
+				{"name" : "minor-hi"},
+				{"name" : "minor-lo"},
+				{
+					"name" : "sensor-id",  
+				        "fields" : [
+   						{"name" : "value"}
+					]
+
+                                },
+				{
+					"name" : "temperature-value",  
+				        "fields" : [
+   						{"name" : "value"}
+					]
+
+                                },
+				{
+					"name" : "value",  
+				        "fields" : [
+   						{"name" : "value"}
+					]
+
+                                }
+
+
+
+
+			]
+		}
+	},
+
+	{
+		"basepath" : "Cisco-IOS-XR-sysadmin-envmon-ui:environment/oper/voltages/location/sensor_attributes",
+		"spec" : {
+			"fields" : [
+				{"name" : "location", "tag" : true},
+				{"name" : "sensor", "tag": true},
+				{
+					"name" : "alarm",  
+				        "fields" : [
+   						{"name" : "value"}
+					]
+
+                                },
+                                {"name" : "critical-hi"},
+				{"name" : "critical-lo"},
+				{"name" : "major-hi"},
+				{"name" : "major-lo"},
+				{"name" : "minor-hi"},
+				{"name" : "minor-lo"},
+				{
+					"name" : "sensor-id",  
+				        "fields" : [
+   						{"name" : "value"}
+					]
+
+                                },
+				{
+					"name" : "temperature-value",  
+				        "fields" : [
+   						{"name" : "value"}
+					]
+
+                                },
+				{
+					"name" : "value",  
+				        "fields" : [
+   						{"name" : "value"}
+					]
+
+                                }
+
+
+
+
+			]
+		}
+	},
+
+	{
+		"basepath" : "Cisco-IOS-XR-sysadmin-envmon-ui:envmon/environment/oper/power/location/pem_attributes",
+		"spec" : {
+			"fields" : [
+				{"name" : "location", "tag" : true},
+				{"name" : "pem", "tag": true},
+				{
+					"name" : "pem-id",  
+				        "fields" : [
+   						{"name" : "value"}
+					]
+
+                                },
+				{
+					"name" : "card-type",  
+				        "fields" : [
+   						{"name" : "value"}
+					]
+
+                                },
+				{
+					"name" : "ps-type",  
+				        "fields" : [
+   						{"name" : "value"}
+					]
+
+                                },
+				{"name" : "shelf-num"},
+				
+				
+				{
+					"name" : "supply-type",  
+				        "fields" : [
+   						{"name" : "value"}
+					]
+
+                                },
+				{
+					"name" : "input-voltage",  
+				        "fields" : [
+   						{"name" : "value"}
+					]
+
+                                },
+				{
+					"name" : "input-current",  
+				        "fields" : [
+   						{"name" : "value"}
+					]
+
+                                },
+				{
+					"name" : "output-voltage",  
+				        "fields" : [
+   						{"name" : "value"}
+					]
+
+                                },
+				{
+					"name" : "output-current",  
+				        "fields" : [
+   						{"name" : "value"}
+					]
+
+                                },
+				{
+					"name" : "status",  
+				        "fields" : [
+   						{"name" : "value"}
+					]
+
+                                },
+				{
+					"name" : "input-power-to-ps",  
+				        "fields" : [
+   						{"name" : "value"}
+					]
+
+                                },
+				{
+					"name" : "input-current-to-ps",  
+				        "fields" : [
+   						{"name" : "value"}
+					]
+
+                                },
+				{
+					"name" : "output-power-from-ps",  
+				        "fields" : [
+   						{"name" : "value"}
+					]
+
+                                },
+					{
+					"name" : "output-current-from-ps",  
+				        "fields" : [
+   						{"name" : "value"}
+					]
+
+                                },
+				{"name" : "power-allocated"},
+				{
+					"name" : "power-consumed",  
+				        "fields" : [
+   						{"name" : "value"}
+					]
+
+                                },
+				{
+					"name" : "power-status",  
+				        "fields" : [
+   						{"name" : "value"}
+					]
+
+                                },
+				{
+					"name" : "confgd-power-redundancy-mode",  
+				        "fields" : [
+   						{"name" : "value"}
+					]
+
+                                },
+				{"name" : "usable-power-capacity"},
+				{"name" : "protection-power-capacity"},
+				{"name" : "power-resrv-and-alloc"},
+				{"name" : "system-power-used"},
+				{"name" : "system-power-input"},
+				{"name" : "power-level"},
+				{"name" : "output-header"},
+				{"name" : "output-footer"},
+				{"name" : "ps-sum-footer"}
+
+
+			]
+		}
+	},
+
+        {
+		"basepath" : "Cisco-IOS-XR-sysadmin-envmon-ui:environment/oper/power/location/pem_attributes",
+		"spec" : {
+			"fields" : [
+				{"name" : "location", "tag" : true},
+				{"name" : "pem", "tag": true},
+				{
+					"name" : "pem-id",  
+				        "fields" : [
+   						{"name" : "value"}
+					]
+
+                                },
+				{
+					"name" : "card-type",  
+				        "fields" : [
+   						{"name" : "value"}
+					]
+
+                                },
+				{
+					"name" : "ps-type",  
+				        "fields" : [
+   						{"name" : "value"}
+					]
+
+                                },
+				{"name" : "shelf-num"},
+				
+				
+				{
+					"name" : "supply-type",  
+				        "fields" : [
+   						{"name" : "value"}
+					]
+
+                                },
+				{
+					"name" : "input-voltage",  
+				        "fields" : [
+   						{"name" : "value"}
+					]
+
+                                },
+				{
+					"name" : "input-current",  
+				        "fields" : [
+   						{"name" : "value"}
+					]
+
+                                },
+				{
+					"name" : "output-voltage",  
+				        "fields" : [
+   						{"name" : "value"}
+					]
+
+                                },
+				{
+					"name" : "output-current",  
+				        "fields" : [
+   						{"name" : "value"}
+					]
+
+                                },
+				{
+					"name" : "status",  
+				        "fields" : [
+   						{"name" : "value"}
+					]
+
+                                },
+				{
+					"name" : "input-power-to-ps",  
+				        "fields" : [
+   						{"name" : "value"}
+					]
+
+                                },
+				{
+					"name" : "input-current-to-ps",  
+				        "fields" : [
+   						{"name" : "value"}
+					]
+
+                                },
+				{
+					"name" : "output-power-from-ps",  
+				        "fields" : [
+   						{"name" : "value"}
+					]
+
+                                },
+					{
+					"name" : "output-current-from-ps",  
+				        "fields" : [
+   						{"name" : "value"}
+					]
+
+                                },
+				{"name" : "power-allocated"},
+				{
+					"name" : "power-consumed",  
+				        "fields" : [
+   						{"name" : "value"}
+					]
+
+                                },
+				{
+					"name" : "power-status",  
+				        "fields" : [
+   						{"name" : "value"}
+					]
+
+                                },
+				{
+					"name" : "confgd-power-redundancy-mode",  
+				        "fields" : [
+   						{"name" : "value"}
+					]
+
+                                },
+				{"name" : "usable-power-capacity"},
+				{"name" : "protection-power-capacity"},
+				{"name" : "power-resrv-and-alloc"},
+				{"name" : "system-power-used"},
+				{"name" : "system-power-input"},
+				{"name" : "power-level"},
+				{"name" : "output-header"},
+				{"name" : "output-footer"},
+				{"name" : "ps-sum-footer"}
+
+
+			]
+		}
+	},
+	{
+		"basepath" : "Cisco-IOS-XR-sysadmin-envmon-ui:envmon/environment/oper/fan/location/fan_attributes",
+		"spec" : {
+			"fields" : [
+				{"name" : "location", "tag" : true},
+				{"name" : "logical-slot", "tag": true},
+				{
+					"name" : "print-fan-header",  
+				        "fields" : [
+   						{"name" : "value"}
+					]
+
+                                },
+				{
+					"name" : "fru-pid",  
+				        "fields" : [
+   						{"name" : "value"}
+					]
+
+                                },
+				{
+					"name" : "fans-speed",  
+				        "fields" : [
+   						{"name" : "value"}
+					]
+
+                                },
+				{"name" : "fan-header"},
+				{
+					"name" : "location",  
+				        "fields" : [
+   						{"name" : "value"}
+					]
+
+                                },
+				{"name" : "speed-space"}
+
+			]
+		}
+	},
+	{
+		"basepath" : "Cisco-IOS-XR-sysadmin-envmon-ui:environment/oper/fan/location/fan_attributes",
+		"spec" : {
+			"fields" : [
+				{"name" : "location", "tag" : true},
+				{"name" : "logical-slot", "tag": true},
+				{
+					"name" : "print-fan-header",  
+				        "fields" : [
+   						{"name" : "value"}
+					]
+
+                                },
+				{
+					"name" : "fru-pid",  
+				        "fields" : [
+   						{"name" : "value"}
+					]
+
+                                },
+				{
+					"name" : "fans-speed",  
+				        "fields" : [
+   						{"name" : "value"}
+					]
+
+                                },
+				{"name" : "fan-header"},
+				{
+					"name" : "location",  
+				        "fields" : [
+   						{"name" : "value"}
+					]
+
+                                },
+				{"name" : "speed-space"}
+
+			]
+		}
+	},
+
+	{
+		"basepath" : "Cisco-IOS-XR-infra-statsd-oper:infra-statistics/interfaces/interface/latest/generic-counters",
+		"spec" : {
+			"fields" : [
+				{"name" : "interface-name", "tag" : true},
+				{"name" : "packets-received"},
+				{"name" : "bytes-received"},
+				{"name" : "packets-sent", "track": true},
+				{"name" : "bytes-sent"},
+				{"name" : "output-drops"},
+				{"name" : "output-queue-drops"},
+				{"name" : "input-drops"},
+				{"name" : "input-queue-drops"},
+				{"name" : "input-errors"},
+				{"name" : "crc-errors"},
+				{"name" : "input-ignored-packets"},
+				{"name" : "output-errors"},
+				{"name" : "output-buffer-failures"},
+				{"name" : "carrier-transitions"}
+			]
+		}
+	},
+
+	{	
+		"basepath" : "Cisco-IOS-XR-infra-statsd-oper:infra-statistics/interfaces/interface/latest/data-rate",
+		"spec" : {
+			"fields" : [
+				{"name" : "interface-name", "tag" : true},
+				{"name" : "input-data-rate"},
+				{"name" : "input-packet-rate"},
+				{"name" : "output-data-rate"},
+				{"name" : "output-packet-rate"},
+				{"name" : "peak-input-data-rate"},
+				{"name" : "peak-input-packet-rate"},
+				{"name" : "peak-output-data-rate"},
+				{"name" : "peak-output-packet-rate"},
+				{"name" : "bandwidth"},
+				{"name" : "load-interval"},
+				{"name" : "output-load"},
+				{"name" : "input-load"},
+				{"name" : "reliability"}
+			]
+		}
+
+	},
+	{	
+		"basepath" : "Cisco-IOS-XR-infra-statsd-oper:infra-statistics/interfaces/interface/latest/data-rate",
+		"spec" : {
+			"fields" : [
+				{"name" : "interface-name", "tag" : true},
+				{"name" : "input-data-rate"},
+				{"name" : "input-packet-rate"},
+				{"name" : "output-data-rate"},
+				{"name" : "output-packet-rate"},
+				{"name" : "peak-input-data-rate"},
+				{"name" : "peak-input-packet-rate"},
+				{"name" : "peak-output-data-rate"},
+				{"name" : "peak-output-packet-rate"},
+				{"name" : "bandwidth"},
+				{"name" : "load-interval"},
+				{"name" : "output-load"},
+				{"name" : "input-load"},
+				{"name" : "reliability"}
+			]
+		}
+
+	},
+
+
+
+
+	{
+		"basepath" : "Cisco-IOS-XR-mpls-te-oper:mpls-te/tunnels/tunnel-auto-bandwidths/tunnel-auto-bandwidth",
+		"spec" : {
+			"fields" : [
+				{"name" : "tunnel-name", "tag" : true},
+				{"name" : "highest-bandwidth"},
+				{"name" : "last-sample-bandwidth"},
+				{"name" : "samples-collected"},
+				{"name" : "tunnel-requested-bandwidth"}
+			]
+		}
+	},
+	{
+		"basepath" : "Cisco-IOS-XR-qos-ma-oper:qos/interface-table/interface/output/statistics",
+		"spec" : {
+			"fields" : [
+				{"name" : "interface-name", "tag" : true},
+				{"name" : "policy-name", "tag" : true},
+				{
+					"name" : "class-stats",
+					"fields" : [
+						{"name" : "class-name", "tag" : true},
+						{
+							"name" : "general-stats",
+							"fields" : [
+								{"name" : "transmit-packets"},
+								{"name" : "transmit-bytes"},
+								{"name" : "total-drop-packets"},
+								{"name" : "total-drop-bytes"},
+								{"name" : "total-drop-rate"},
+								{"name" : "total-transmit-rate"}
+							]
+						},
+						{
+							"name" : "queue-stats-array",
+							"fields" : [
+								{"name" : "queue-id", "tag" : true},
+								{"name" : "tail-drop-packets"},
+								{"name" : "tail-drop-bytes"},
+								{
+									"name" : "queue-average-length",
+									"fields" : [
+										{"name" : "value"},
+										{"name" : "unit", "tag" : true}
+									]
+								},
+								{"name" : "random-drop-packets"},
+								{"name" : "random-drop-bytes"},
+								{"name" : "conform-packets"},
+								{"name" : "conform-bytes"},
+								{"name" : "exceed-packets"},
+								{"name" : "exceed-bytes"}
+							]
+						}
+					]
+				}
+			]
+		}
+	},
+	{
+		"basepath" : "Cisco-IOS-XR-procmem-oper:processes-memory/nodes/node/process-ids/process-id",
+		"spec" : {
+			"fields" : [
+				{"name":"node-name", "tag": true},
+				{"name":"name", "tag": true},
+				{"name":"text-seg-size"},
+				{"name":"data-seg-size"},
+				{"name":"stack-seg-size"},
+				{"name":"malloc-size"}
+			]
+		}
+	},
+	{
+		"basepath" : "Cisco-IOS-XR-nto-misc-oper:memory-summary/nodes/node/summary",
+		"spec" : {
+			"fields" : [
+				{"name":"node-name", "tag": true},
+				{"name":"ram-memory"},
+				{"name":"free-physical-memory"},
+				{"name":"system-ram-memory"},
+				{"name":"free-application-memory"}
+			]
+		}
+	},
+	{
+		"basepath" : "Cisco-IOS-XR-wdsysmon-fd-oper:system-monitoring/cpu-utilization",
+		"spec" : {
+			"fields" : [
+				{"name":"node-name", "tag": true},
+				{"name":"total-cpu-one-minute"},
+				{"name":"total-cpu-five-minute"},
+				{"name":"total-cpu-fifteen-minute"},
+				{
+					"name":"process-cpu",
+					"fields" : [
+						{"name":"process-name", "tag": true},
+						{"name":"process-cpu-one-minute"},
+						{"name":"process-cpu-five-minute"},
+						{"name":"process-cpu-fifteen-minute"}
+					]
+				}
+			]
+		}
+	},
+	{
+                "basepath" : "Cisco-IOS-XR-asic-errors-oper:asic-errors/nodes/node/asic-information/instances/instance/error-path/reset-hard-errors",
+                "spec" : {
+                        "fields" : [
+                                {"name" : "asic", "tag" : true},
+                                {"name" : "asic-instance", "tag": true},
+                                {"name" : "node", "tag": true},
+                                {
+                                        "name": "error",
+                                        "fields" : [
+
+
+                                                {
+                                                        "name" : "alarm-on",
+                                                        "fields" : [
+                                                                {"name" : "value"}
+                                                        ]
+
+                                                },
+                                                {
+                                                        "name" : "asic-info",
+                                                        "fields" : [
+                                                                {"name" : "value"}
+                                                        ]
+
+                                                },
+                                                {"name" : "count"},
+                                                {"name" : "intr-type"},
+                                                {"name" : "last-cleared"},
+                                                {
+                                                        "name" : "last-err",
+                                                        "fields" : [
+                                                                {"name":"at-time"},
+                                                                {"name":"at-time-nsec"},
+                                                                {"name":"counter-val"},
+                                                                {
+                                                                        "name" : "error-desc",
+                                                                        "fields" : [
+                                                                                {"name" : "value"}
+                                                                        ]
+
+                                                                }
+
+
+                                                        ]
+
+                                                },
+                                                {"name" : "leaf-id"},
+                                                {
+                                                        "name" : "hard-reset",
+                                                        "fields" : [
+                                                                {"name" : "value"}
+                                                        ]
+
+                                                },
+                                                {"name" : "node-key"},
+                                                {"name" : "period-hi"},
+                                                {"name" : "period-lo"},
+                                                {"name" : "threshold-hi"},
+                                                {"name" : "threshold-lo"}
+
+                                        ]
+                                }
+
+                        ]
+                }
+        },
+	{
+                "basepath" : "Cisco-IOS-XR-asic-errors-oper:asic-errors/nodes/node/asic-information/instances/instance/error-path/io-hard-errors",
+                "spec" : {
+                        "fields" : [
+                                {"name" : "asic", "tag" : true},
+                                {"name" : "asic-instance", "tag": true},
+                                {"name" : "node", "tag": true},
+                                {
+                                        "name": "error",
+                                        "fields" : [
+
+
+                                                {
+                                                        "name" : "alarm-on",
+                                                        "fields" : [
+                                                                {"name" : "value"}
+                                                        ]
+
+                                                },
+                                                {
+                                                        "name" : "asic-info",
+                                                        "fields" : [
+                                                                {"name" : "value"}
+                                                        ]
+
+                                                },
+                                                {"name" : "count"},
+                                                {"name" : "intr-type"},
+                                                {"name" : "last-cleared"},
+                                                {
+                                                        "name" : "last-err",
+                                                        "fields" : [
+                                                                {"name":"at-time"},
+                                                                {"name":"at-time-nsec"},
+                                                                {"name":"counter-val"},
+                                                                {
+                                                                        "name" : "error-desc",
+                                                                        "fields" : [
+                                                                                {"name" : "value"}
+                                                                        ]
+
+                                                                }
+
+
+                                                        ]
+
+                                                },
+                                                {"name" : "leaf-id"},
+                                                {
+                                                        "name" : "hard-reset",
+                                                        "fields" : [
+                                                                {"name" : "value"}
+                                                        ]
+
+                                                },
+                                                {"name" : "node-key"},
+                                                {"name" : "period-hi"},
+                                                {"name" : "period-lo"},
+                                                {"name" : "threshold-hi"},
+                                                {"name" : "threshold-lo"}
+
+                                        ]
+                                }
+
+                        ]
+                }
+        },
+	{
+                "basepath" : "Cisco-IOS-XR-asic-errors-oper:asic-errors/nodes/node/asic-information/instances/instance/error-path/interface-soft-errors",
+                "spec" : {
+                        "fields" : [
+                                {"name" : "asic", "tag" : true},
+                                {"name" : "asic-instance", "tag": true},
+                                {"name" : "node", "tag": true},
+                                {
+                                        "name": "error",
+                                        "fields" : [
+
+
+                                                {
+                                                        "name" : "alarm-on",
+                                                        "fields" : [
+                                                                {"name" : "value"}
+                                                        ]
+
+                                                },
+                                                {
+                                                        "name" : "asic-info",
+                                                        "fields" : [
+                                                                {"name" : "value"}
+                                                        ]
+
+                                                },
+                                                {"name" : "count"},
+                                                {"name" : "intr-type"},
+                                                {"name" : "last-cleared"},
+                                                {
+                                                        "name" : "last-err",
+                                                        "fields" : [
+                                                                {"name":"at-time"},
+                                                                {"name":"at-time-nsec"},
+                                                                {"name":"counter-val"},
+                                                                {
+                                                                        "name" : "error-desc",
+                                                                        "fields" : [
+                                                                                {"name" : "value"}
+                                                                        ]
+
+                                                                }
+
+
+                                                        ]
+
+                                                },
+                                                {"name" : "leaf-id"},
+                                                {
+                                                        "name" : "hard-reset",
+                                                        "fields" : [
+                                                                {"name" : "value"}
+                                                        ]
+
+                                                },
+                                                {"name" : "node-key"},
+                                                {"name" : "period-hi"},
+                                                {"name" : "period-lo"},
+                                                {"name" : "threshold-hi"},
+                                                {"name" : "threshold-lo"}
+
+                                        ]
+                                }
+
+                        ]
+                }
+        },
+	{
+                "basepath" : "Cisco-IOS-XR-asic-errors-oper:asic-errors/nodes/node/asic-information/instances/instance/error-path/descriptor-soft-errors",
+                "spec" : {
+                        "fields" : [
+                                {"name" : "asic", "tag" : true},
+                                {"name" : "asic-instance", "tag": true},
+                                {"name" : "node", "tag": true},
+                                {
+                                        "name": "error",
+                                        "fields" : [
+
+
+                                                {
+                                                        "name" : "alarm-on",
+                                                        "fields" : [
+                                                                {"name" : "value"}
+                                                        ]
+
+                                                },
+                                                {
+                                                        "name" : "asic-info",
+                                                        "fields" : [
+                                                                {"name" : "value"}
+                                                        ]
+
+                                                },
+                                                {"name" : "count"},
+                                                {"name" : "intr-type"},
+                                                {"name" : "last-cleared"},
+                                                {
+                                                        "name" : "last-err",
+                                                        "fields" : [
+                                                                {"name":"at-time"},
+                                                                {"name":"at-time-nsec"},
+                                                                {"name":"counter-val"},
+                                                                {
+                                                                        "name" : "error-desc",
+                                                                        "fields" : [
+                                                                                {"name" : "value"}
+                                                                        ]
+
+                                                                }
+
+
+                                                        ]
+
+                                                },
+                                                {"name" : "leaf-id"},
+                                                {
+                                                        "name" : "hard-reset",
+                                                        "fields" : [
+                                                                {"name" : "value"}
+                                                        ]
+
+                                                },
+                                                {"name" : "node-key"},
+                                                {"name" : "period-hi"},
+                                                {"name" : "period-lo"},
+                                                {"name" : "threshold-hi"},
+                                                {"name" : "threshold-lo"}
+
+                                        ]
+                                }
+
+                        ]
+                }
+        },
+	{
+                "basepath" : "Cisco-IOS-XR-asic-errors-oper:asic-errors/nodes/node/asic-information/instances/instance/error-path/parity-soft-errors",
+                "spec" : {
+                        "fields" : [
+                                {"name" : "asic", "tag" : true},
+                                {"name" : "asic-instance", "tag": true},
+                                {"name" : "node", "tag": true},
+                                {
+                                        "name": "error",
+                                        "fields" : [
+
+
+                                                {
+                                                        "name" : "alarm-on",
+                                                        "fields" : [
+                                                                {"name" : "value"}
+                                                        ]
+
+                                                },
+                                                {
+                                                        "name" : "asic-info",
+                                                        "fields" : [
+                                                                {"name" : "value"}
+                                                        ]
+
+                                                },
+                                                {"name" : "count"},
+                                                {"name" : "intr-type"},
+                                                {"name" : "last-cleared"},
+                                                {
+                                                        "name" : "last-err",
+                                                        "fields" : [
+                                                                {"name":"at-time"},
+                                                                {"name":"at-time-nsec"},
+                                                                {"name":"counter-val"},
+                                                                {
+                                                                        "name" : "error-desc",
+                                                                        "fields" : [
+                                                                                {"name" : "value"}
+                                                                        ]
+
+                                                                }
+
+
+                                                        ]
+
+                                                },
+                                                {"name" : "leaf-id"},
+                                                {
+                                                        "name" : "hard-reset",
+                                                        "fields" : [
+                                                                {"name" : "value"}
+                                                        ]
+
+                                                },
+                                                {"name" : "node-key"},
+                                                {"name" : "period-hi"},
+                                                {"name" : "period-lo"},
+                                                {"name" : "threshold-hi"},
+                                                {"name" : "threshold-lo"}
+
+                                        ]
+                                }
+
+                        ]
+                }
+        },
+	{
+                "basepath" : "Cisco-IOS-XR-asic-errors-oper:asic-errors/nodes/node/asic-information/instances/instance/error-path/hardware-hard-errors",
+                "spec" : {
+                        "fields" : [
+                                {"name" : "asic", "tag" : true},
+                                {"name" : "asic-instance", "tag": true},
+                                {"name" : "node", "tag": true},
+                                {
+                                        "name": "error",
+                                        "fields" : [
+
+
+                                                {
+                                                        "name" : "alarm-on",
+                                                        "fields" : [
+                                                                {"name" : "value"}
+                                                        ]
+
+                                                },
+                                                {
+                                                        "name" : "asic-info",
+                                                        "fields" : [
+                                                                {"name" : "value"}
+                                                        ]
+
+                                                },
+                                                {"name" : "count"},
+                                                {"name" : "intr-type"},
+                                                {"name" : "last-cleared"},
+                                                {
+                                                        "name" : "last-err",
+                                                        "fields" : [
+                                                                {"name":"at-time"},
+                                                                {"name":"at-time-nsec"},
+                                                                {"name":"counter-val"},
+                                                                {
+                                                                        "name" : "error-desc",
+                                                                        "fields" : [
+                                                                                {"name" : "value"}
+                                                                        ]
+
+                                                                }
+
+
+                                                        ]
+
+                                                },
+                                                {"name" : "leaf-id"},
+                                                {
+                                                        "name" : "hard-reset",
+                                                        "fields" : [
+                                                                {"name" : "value"}
+                                                        ]
+
+                                                },
+                                                {"name" : "node-key"},
+                                                {"name" : "period-hi"},
+                                                {"name" : "period-lo"},
+                                                {"name" : "threshold-hi"},
+                                                {"name" : "threshold-lo"}
+
+                                        ]
+                                }
+
+                        ]
+                }
+        },
+	{
+                "basepath" : "Cisco-IOS-XR-asic-errors-oper:asic-errors/nodes/node/asic-information/instances/instance/error-path/outof-resource-hard",
+                "spec" : {
+                        "fields" : [
+                                {"name" : "asic", "tag" : true},
+                                {"name" : "asic-instance", "tag": true},
+                                {"name" : "node", "tag": true},
+                                {
+                                        "name": "error",
+                                        "fields" : [
+
+
+                                                {
+                                                        "name" : "alarm-on",
+                                                        "fields" : [
+                                                                {"name" : "value"}
+                                                        ]
+
+                                                },
+                                                {
+                                                        "name" : "asic-info",
+                                                        "fields" : [
+                                                                {"name" : "value"}
+                                                        ]
+
+                                                },
+                                                {"name" : "count"},
+                                                {"name" : "intr-type"},
+                                                {"name" : "last-cleared"},
+                                                {
+                                                        "name" : "last-err",
+                                                        "fields" : [
+                                                                {"name":"at-time"},
+                                                                {"name":"at-time-nsec"},
+                                                                {"name":"counter-val"},
+                                                                {
+                                                                        "name" : "error-desc",
+                                                                        "fields" : [
+                                                                                {"name" : "value"}
+                                                                        ]
+
+                                                                }
+
+
+                                                        ]
+
+                                                },
+                                                {"name" : "leaf-id"},
+                                                {
+                                                        "name" : "hard-reset",
+                                                        "fields" : [
+                                                                {"name" : "value"}
+                                                        ]
+
+                                                },
+                                                {"name" : "node-key"},
+                                                {"name" : "period-hi"},
+                                                {"name" : "period-lo"},
+                                                {"name" : "threshold-hi"},
+                                                {"name" : "threshold-lo"}
+
+                                        ]
+                                }
+
+                        ]
+                }
+        },
+	{
+                "basepath" : "Cisco-IOS-XR-asic-errors-oper:asic-errors/nodes/node/asic-information/instances/instance/error-path/unexpected-soft-errors",
+                "spec" : {
+                        "fields" : [
+                                {"name" : "asic", "tag" : true},
+                                {"name" : "asic-instance", "tag": true},
+                                {"name" : "node", "tag": true},
+                                {
+                                        "name": "error",
+                                        "fields" : [
+
+
+                                                {
+                                                        "name" : "alarm-on",
+                                                        "fields" : [
+                                                                {"name" : "value"}
+                                                        ]
+
+                                                },
+                                                {
+                                                        "name" : "asic-info",
+                                                        "fields" : [
+                                                                {"name" : "value"}
+                                                        ]
+
+                                                },
+                                                {"name" : "count"},
+                                                {"name" : "intr-type"},
+                                                {"name" : "last-cleared"},
+                                                {
+                                                        "name" : "last-err",
+                                                        "fields" : [
+                                                                {"name":"at-time"},
+                                                                {"name":"at-time-nsec"},
+                                                                {"name":"counter-val"},
+                                                                {
+                                                                        "name" : "error-desc",
+                                                                        "fields" : [
+                                                                                {"name" : "value"}
+                                                                        ]
+
+                                                                }
+
+
+                                                        ]
+
+                                                },
+                                                {"name" : "leaf-id"},
+                                                {
+                                                        "name" : "hard-reset",
+                                                        "fields" : [
+                                                                {"name" : "value"}
+                                                        ]
+
+                                                },
+                                                {"name" : "node-key"},
+                                                {"name" : "period-hi"},
+                                                {"name" : "period-lo"},
+                                                {"name" : "threshold-hi"},
+                                                {"name" : "threshold-lo"}
+
+                                        ]
+                                }
+
+                        ]
+                }
+        },
+	{
+                "basepath" : "Cisco-IOS-XR-asic-errors-oper:asic-errors/nodes/node/asic-information/instances/instance/error-path/multiple-bit-hard-errors",
+                "spec" : {
+                        "fields" : [
+                                {"name" : "asic", "tag" : true},
+                                {"name" : "asic-instance", "tag": true},
+                                {"name" : "node", "tag": true},
+                                {
+                                        "name": "error",
+                                        "fields" : [
+
+
+                                                {
+                                                        "name" : "alarm-on",
+                                                        "fields" : [
+                                                                {"name" : "value"}
+                                                        ]
+
+                                                },
+                                                {
+                                                        "name" : "asic-info",
+                                                        "fields" : [
+                                                                {"name" : "value"}
+                                                        ]
+
+                                                },
+                                                {"name" : "count"},
+                                                {"name" : "intr-type"},
+                                                {"name" : "last-cleared"},
+                                                {
+                                                        "name" : "last-err",
+                                                        "fields" : [
+                                                                {"name":"at-time"},
+                                                                {"name":"at-time-nsec"},
+                                                                {"name":"counter-val"},
+                                                                {
+                                                                        "name" : "error-desc",
+                                                                        "fields" : [
+                                                                                {"name" : "value"}
+                                                                        ]
+
+                                                                }
+
+
+                                                        ]
+
+                                                },
+                                                {"name" : "leaf-id"},
+                                                {
+                                                        "name" : "hard-reset",
+                                                        "fields" : [
+                                                                {"name" : "value"}
+                                                        ]
+
+                                                },
+                                                {"name" : "node-key"},
+                                                {"name" : "period-hi"},
+                                                {"name" : "period-lo"},
+                                                {"name" : "threshold-hi"},
+                                                {"name" : "threshold-lo"}
+
+                                        ]
+                                }
+
+                        ]
+                }
+        },
+	{
+                "basepath" : "Cisco-IOS-XR-asic-errors-oper:asic-errors/nodes/node/asic-information/instances/instance/error-path/reset-hard-errors",
+                "spec" : {
+                        "fields" : [
+                                {"name" : "asic", "tag" : true},
+                                {"name" : "asic-instance", "tag": true},
+                                {"name" : "node", "tag": true},
+                                {
+                                        "name": "error",
+                                        "fields" : [
+
+
+                                                {
+                                                        "name" : "alarm-on",
+                                                        "fields" : [
+                                                                {"name" : "value"}
+                                                        ]
+
+                                                },
+                                                {
+                                                        "name" : "asic-info",
+                                                        "fields" : [
+                                                                {"name" : "value"}
+                                                        ]
+
+                                                },
+                                                {"name" : "count"},
+                                                {"name" : "intr-type"},
+                                                {"name" : "last-cleared"},
+                                                {
+                                                        "name" : "last-err",
+                                                        "fields" : [
+                                                                {"name":"at-time"},
+                                                                {"name":"at-time-nsec"},
+                                                                {"name":"counter-val"},
+                                                                {
+                                                                        "name" : "error-desc",
+                                                                        "fields" : [
+                                                                                {"name" : "value"}
+                                                                        ]
+
+                                                                }
+
+
+                                                        ]
+
+                                                },
+                                                {"name" : "leaf-id"},
+                                                {
+                                                        "name" : "hard-reset",
+                                                        "fields" : [
+                                                                {"name" : "value"}
+                                                        ]
+
+                                                },
+                                                {"name" : "node-key"},
+                                                {"name" : "period-hi"},
+                                                {"name" : "period-lo"},
+                                                {"name" : "threshold-hi"},
+                                                {"name" : "threshold-lo"}
+
+                                        ]
+                                }
+
+                        ]
+                }
+        },
+	{
+                "basepath" : "Cisco-IOS-XR-asic-errors-oper:asic-errors/nodes/node/asic-information/instances/instance/error-path/configuration-soft-errors",
+                "spec" : {
+                        "fields" : [
+                                {"name" : "asic", "tag" : true},
+                                {"name" : "asic-instance", "tag": true},
+                                {"name" : "node", "tag": true},
+                                {
+                                        "name": "error",
+                                        "fields" : [
+
+
+                                                {
+                                                        "name" : "alarm-on",
+                                                        "fields" : [
+                                                                {"name" : "value"}
+                                                        ]
+
+                                                },
+                                                {
+                                                        "name" : "asic-info",
+                                                        "fields" : [
+                                                                {"name" : "value"}
+                                                        ]
+
+                                                },
+                                                {"name" : "count"},
+                                                {"name" : "intr-type"},
+                                                {"name" : "last-cleared"},
+                                                {
+                                                        "name" : "last-err",
+                                                        "fields" : [
+                                                                {"name":"at-time"},
+                                                                {"name":"at-time-nsec"},
+                                                                {"name":"counter-val"},
+                                                                {
+                                                                        "name" : "error-desc",
+                                                                        "fields" : [
+                                                                                {"name" : "value"}
+                                                                        ]
+
+                                                                }
+
+
+                                                        ]
+
+                                                },
+                                                {"name" : "leaf-id"},
+                                                {
+                                                        "name" : "hard-reset",
+                                                        "fields" : [
+                                                                {"name" : "value"}
+                                                        ]
+
+                                                },
+                                                {"name" : "node-key"},
+                                                {"name" : "period-hi"},
+                                                {"name" : "period-lo"},
+                                                {"name" : "threshold-hi"},
+                                                {"name" : "threshold-lo"}
+
+                                        ]
+                                }
+
+                        ]
+                }
+        },
+	{
+                "basepath" : "Cisco-IOS-XR-asic-errors-oper:asic-errors/nodes/node/asic-information/instances/instance/error-path/link-soft-errors",
+                "spec" : {
+                        "fields" : [
+                                {"name" : "asic", "tag" : true},
+                                {"name" : "asic-instance", "tag": true},
+                                {"name" : "node", "tag": true},
+                                {
+                                        "name": "error",
+                                        "fields" : [
+
+
+                                                {
+                                                        "name" : "alarm-on",
+                                                        "fields" : [
+                                                                {"name" : "value"}
+                                                        ]
+
+                                                },
+                                                {
+                                                        "name" : "asic-info",
+                                                        "fields" : [
+                                                                {"name" : "value"}
+                                                        ]
+
+                                                },
+                                                {"name" : "count"},
+                                                {"name" : "intr-type"},
+                                                {"name" : "last-cleared"},
+                                                {
+                                                        "name" : "last-err",
+                                                        "fields" : [
+                                                                {"name":"at-time"},
+                                                                {"name":"at-time-nsec"},
+                                                                {"name":"counter-val"},
+                                                                {
+                                                                        "name" : "error-desc",
+                                                                        "fields" : [
+                                                                                {"name" : "value"}
+                                                                        ]
+
+                                                                }
+
+
+                                                        ]
+
+                                                },
+                                                {"name" : "leaf-id"},
+                                                {
+                                                        "name" : "hard-reset",
+                                                        "fields" : [
+                                                                {"name" : "value"}
+                                                        ]
+
+                                                },
+                                                {"name" : "node-key"},
+                                                {"name" : "period-hi"},
+                                                {"name" : "period-lo"},
+                                                {"name" : "threshold-hi"},
+                                                {"name" : "threshold-lo"}
+
+                                        ]
+                                }
+
+                        ]
+                }
+        },
+	{
+                "basepath" : "Cisco-IOS-XR-asic-errors-oper:asic-errors/nodes/node/asic-information/instances/instance/error-path/generic-soft-errors",
+                "spec" : {
+                        "fields" : [
+                                {"name" : "asic", "tag" : true},
+                                {"name" : "asic-instance", "tag": true},
+                                {"name" : "node", "tag": true},
+                                {
+                                        "name": "error",
+                                        "fields" : [
+
+
+                                                {
+                                                        "name" : "alarm-on",
+                                                        "fields" : [
+                                                                {"name" : "value"}
+                                                        ]
+
+                                                },
+                                                {
+                                                        "name" : "asic-info",
+                                                        "fields" : [
+                                                                {"name" : "value"}
+                                                        ]
+
+                                                },
+                                                {"name" : "count"},
+                                                {"name" : "intr-type"},
+                                                {"name" : "last-cleared"},
+                                                {
+                                                        "name" : "last-err",
+                                                        "fields" : [
+                                                                {"name":"at-time"},
+                                                                {"name":"at-time-nsec"},
+                                                                {"name":"counter-val"},
+                                                                {
+                                                                        "name" : "error-desc",
+                                                                        "fields" : [
+                                                                                {"name" : "value"}
+                                                                        ]
+
+                                                                }
+
+
+                                                        ]
+
+                                                },
+                                                {"name" : "leaf-id"},
+                                                {
+                                                        "name" : "hard-reset",
+                                                        "fields" : [
+                                                                {"name" : "value"}
+                                                        ]
+
+                                                },
+                                                {"name" : "node-key"},
+                                                {"name" : "period-hi"},
+                                                {"name" : "period-lo"},
+                                                {"name" : "threshold-hi"},
+                                                {"name" : "threshold-lo"}
+
+                                        ]
+                                }
+
+                        ]
+                }
+        },
+	{
+                "basepath" : "Cisco-IOS-XR-asic-errors-oper:asic-errors/nodes/node/asic-information/instances/instance/error-path/back-pressure-soft-errors",
+                "spec" : {
+                        "fields" : [
+                                {"name" : "asic", "tag" : true},
+                                {"name" : "asic-instance", "tag": true},
+                                {"name" : "node", "tag": true},
+                                {
+                                        "name": "error",
+                                        "fields" : [
+
+
+                                                {
+                                                        "name" : "alarm-on",
+                                                        "fields" : [
+                                                                {"name" : "value"}
+                                                        ]
+
+                                                },
+                                                {
+                                                        "name" : "asic-info",
+                                                        "fields" : [
+                                                                {"name" : "value"}
+                                                        ]
+
+                                                },
+                                                {"name" : "count"},
+                                                {"name" : "intr-type"},
+                                                {"name" : "last-cleared"},
+                                                {
+                                                        "name" : "last-err",
+                                                        "fields" : [
+                                                                {"name":"at-time"},
+                                                                {"name":"at-time-nsec"},
+                                                                {"name":"counter-val"},
+                                                                {
+                                                                        "name" : "error-desc",
+                                                                        "fields" : [
+                                                                                {"name" : "value"}
+                                                                        ]
+
+                                                                }
+
+
+                                                        ]
+
+                                                },
+                                                {"name" : "leaf-id"},
+                                                {
+                                                        "name" : "hard-reset",
+                                                        "fields" : [
+                                                                {"name" : "value"}
+                                                        ]
+
+                                                },
+                                                {"name" : "node-key"},
+                                                {"name" : "period-hi"},
+                                                {"name" : "period-lo"},
+                                                {"name" : "threshold-hi"},
+                                                {"name" : "threshold-lo"}
+
+                                        ]
+                                }
+
+                        ]
+                }
+        },
+	{
+                "basepath" : "Cisco-IOS-XR-asic-errors-oper:asic-errors/nodes/node/asic-information/instances/instance/error-path/interface-hard-errors",
+                "spec" : {
+                        "fields" : [
+                                {"name" : "asic", "tag" : true},
+                                {"name" : "asic-instance", "tag": true},
+                                {"name" : "node", "tag": true},
+                                {
+                                        "name": "error",
+                                        "fields" : [
+
+
+                                                {
+                                                        "name" : "alarm-on",
+                                                        "fields" : [
+                                                                {"name" : "value"}
+                                                        ]
+
+                                                },
+                                                {
+                                                        "name" : "asic-info",
+                                                        "fields" : [
+                                                                {"name" : "value"}
+                                                        ]
+
+                                                },
+                                                {"name" : "count"},
+                                                {"name" : "intr-type"},
+                                                {"name" : "last-cleared"},
+                                                {
+                                                        "name" : "last-err",
+                                                        "fields" : [
+                                                                {"name":"at-time"},
+                                                                {"name":"at-time-nsec"},
+                                                                {"name":"counter-val"},
+                                                                {
+                                                                        "name" : "error-desc",
+                                                                        "fields" : [
+                                                                                {"name" : "value"}
+                                                                        ]
+
+                                                                }
+
+
+                                                        ]
+
+                                                },
+                                                {"name" : "leaf-id"},
+                                                {
+                                                        "name" : "hard-reset",
+                                                        "fields" : [
+                                                                {"name" : "value"}
+                                                        ]
+
+                                                },
+                                                {"name" : "node-key"},
+                                                {"name" : "period-hi"},
+                                                {"name" : "period-lo"},
+                                                {"name" : "threshold-hi"},
+                                                {"name" : "threshold-lo"}
+
+                                        ]
+                                }
+
+                        ]
+                }
+        },
+	{
+                "basepath" : "Cisco-IOS-XR-asic-errors-oper:asic-errors/nodes/node/asic-information/instances/instance/error-path/descriptor-hard-errors",
+                "spec" : {
+                        "fields" : [
+                                {"name" : "asic", "tag" : true},
+                                {"name" : "asic-instance", "tag": true},
+                                {"name" : "node", "tag": true},
+                                {
+                                        "name": "error",
+                                        "fields" : [
+
+
+                                                {
+                                                        "name" : "alarm-on",
+                                                        "fields" : [
+                                                                {"name" : "value"}
+                                                        ]
+
+                                                },
+                                                {
+                                                        "name" : "asic-info",
+                                                        "fields" : [
+                                                                {"name" : "value"}
+                                                        ]
+
+                                                },
+                                                {"name" : "count"},
+                                                {"name" : "intr-type"},
+                                                {"name" : "last-cleared"},
+                                                {
+                                                        "name" : "last-err",
+                                                        "fields" : [
+                                                                {"name":"at-time"},
+                                                                {"name":"at-time-nsec"},
+                                                                {"name":"counter-val"},
+                                                                {
+                                                                        "name" : "error-desc",
+                                                                        "fields" : [
+                                                                                {"name" : "value"}
+                                                                        ]
+
+                                                                }
+
+
+                                                        ]
+
+                                                },
+                                                {"name" : "leaf-id"},
+                                                {
+                                                        "name" : "hard-reset",
+                                                        "fields" : [
+                                                                {"name" : "value"}
+                                                        ]
+
+                                                },
+                                                {"name" : "node-key"},
+                                                {"name" : "period-hi"},
+                                                {"name" : "period-lo"},
+                                                {"name" : "threshold-hi"},
+                                                {"name" : "threshold-lo"}
+
+                                        ]
+                                }
+
+                        ]
+                }
+        },
+	{
+                "basepath" : "Cisco-IOS-XR-asic-errors-oper:asic-errors/nodes/node/asic-information/instances/instance/error-path/parity-hard-errors",
+                "spec" : {
+                        "fields" : [
+                                {"name" : "asic", "tag" : true},
+                                {"name" : "asic-instance", "tag": true},
+                                {"name" : "node", "tag": true},
+                                {
+                                        "name": "error",
+                                        "fields" : [
+
+
+                                                {
+                                                        "name" : "alarm-on",
+                                                        "fields" : [
+                                                                {"name" : "value"}
+                                                        ]
+
+                                                },
+                                                {
+                                                        "name" : "asic-info",
+                                                        "fields" : [
+                                                                {"name" : "value"}
+                                                        ]
+
+                                                },
+                                                {"name" : "count"},
+                                                {"name" : "intr-type"},
+                                                {"name" : "last-cleared"},
+                                                {
+                                                        "name" : "last-err",
+                                                        "fields" : [
+                                                                {"name":"at-time"},
+                                                                {"name":"at-time-nsec"},
+                                                                {"name":"counter-val"},
+                                                                {
+                                                                        "name" : "error-desc",
+                                                                        "fields" : [
+                                                                                {"name" : "value"}
+                                                                        ]
+
+                                                                }
+
+
+                                                        ]
+
+                                                },
+                                                {"name" : "leaf-id"},
+                                                {
+                                                        "name" : "hard-reset",
+                                                        "fields" : [
+                                                                {"name" : "value"}
+                                                        ]
+
+                                                },
+                                                {"name" : "node-key"},
+                                                {"name" : "period-hi"},
+                                                {"name" : "period-lo"},
+                                                {"name" : "threshold-hi"},
+                                                {"name" : "threshold-lo"}
+
+                                        ]
+                                }
+
+                        ]
+                }
+        },
+	{
+                "basepath" : "Cisco-IOS-XR-asic-errors-oper:asic-errors/nodes/node/asic-information/instances/instance/error-path/time-out-soft-errors",
+                "spec" : {
+                        "fields" : [
+                                {"name" : "asic", "tag" : true},
+                                {"name" : "asic-instance", "tag": true},
+                                {"name" : "node", "tag": true},
+                                {
+                                        "name": "error",
+                                        "fields" : [
+
+
+                                                {
+                                                        "name" : "alarm-on",
+                                                        "fields" : [
+                                                                {"name" : "value"}
+                                                        ]
+
+                                                },
+                                                {
+                                                        "name" : "asic-info",
+                                                        "fields" : [
+                                                                {"name" : "value"}
+                                                        ]
+
+                                                },
+                                                {"name" : "count"},
+                                                {"name" : "intr-type"},
+                                                {"name" : "last-cleared"},
+                                                {
+                                                        "name" : "last-err",
+                                                        "fields" : [
+                                                                {"name":"at-time"},
+                                                                {"name":"at-time-nsec"},
+                                                                {"name":"counter-val"},
+                                                                {
+                                                                        "name" : "error-desc",
+                                                                        "fields" : [
+                                                                                {"name" : "value"}
+                                                                        ]
+
+                                                                }
+
+
+                                                        ]
+
+                                                },
+                                                {"name" : "leaf-id"},
+                                                {
+                                                        "name" : "hard-reset",
+                                                        "fields" : [
+                                                                {"name" : "value"}
+                                                        ]
+
+                                                },
+                                                {"name" : "node-key"},
+                                                {"name" : "period-hi"},
+                                                {"name" : "period-lo"},
+                                                {"name" : "threshold-hi"},
+                                                {"name" : "threshold-lo"}
+
+                                        ]
+                                }
+
+                        ]
+                }
+        },
+	{
+                "basepath" : "Cisco-IOS-XR-asic-errors-oper:asic-errors/nodes/node/asic-information/instances/instance/error-path/unexpected-hard-errors",
+                "spec" : {
+                        "fields" : [
+                                {"name" : "asic", "tag" : true},
+                                {"name" : "asic-instance", "tag": true},
+                                {"name" : "node", "tag": true},
+                                {
+                                        "name": "error",
+                                        "fields" : [
+
+
+                                                {
+                                                        "name" : "alarm-on",
+                                                        "fields" : [
+                                                                {"name" : "value"}
+                                                        ]
+
+                                                },
+                                                {
+                                                        "name" : "asic-info",
+                                                        "fields" : [
+                                                                {"name" : "value"}
+                                                        ]
+
+                                                },
+                                                {"name" : "count"},
+                                                {"name" : "intr-type"},
+                                                {"name" : "last-cleared"},
+                                                {
+                                                        "name" : "last-err",
+                                                        "fields" : [
+                                                                {"name":"at-time"},
+                                                                {"name":"at-time-nsec"},
+                                                                {"name":"counter-val"},
+                                                                {
+                                                                        "name" : "error-desc",
+                                                                        "fields" : [
+                                                                                {"name" : "value"}
+                                                                        ]
+
+                                                                }
+
+
+                                                        ]
+
+                                                },
+                                                {"name" : "leaf-id"},
+                                                {
+                                                        "name" : "hard-reset",
+                                                        "fields" : [
+                                                                {"name" : "value"}
+                                                        ]
+
+                                                },
+                                                {"name" : "node-key"},
+                                                {"name" : "period-hi"},
+                                                {"name" : "period-lo"},
+                                                {"name" : "threshold-hi"},
+                                                {"name" : "threshold-lo"}
+
+                                        ]
+                                }
+
+                        ]
+                }
+        },
+	{
+                "basepath" : "Cisco-IOS-XR-asic-errors-oper:asic-errors/nodes/node/asic-information/instances/instance/error-path/instance-summary",
+                "spec" : {
+                        "fields" : [
+                                {"name" : "asic", "tag" : true},
+                                {"name" : "asic-instance", "tag": true},
+                                {"name" : "node", "tag": true},
+                                {
+                                        "name": "error",
+                                        "fields" : [
+
+
+                                                {
+                                                        "name" : "alarm-on",
+                                                        "fields" : [
+                                                                {"name" : "value"}
+                                                        ]
+
+                                                },
+                                                {
+                                                        "name" : "asic-info",
+                                                        "fields" : [
+                                                                {"name" : "value"}
+                                                        ]
+
+                                                },
+                                                {"name" : "count"},
+                                                {"name" : "intr-type"},
+                                                {"name" : "last-cleared"},
+                                                {
+                                                        "name" : "last-err",
+                                                        "fields" : [
+                                                                {"name":"at-time"},
+                                                                {"name":"at-time-nsec"},
+                                                                {"name":"counter-val"},
+                                                                {
+                                                                        "name" : "error-desc",
+                                                                        "fields" : [
+                                                                                {"name" : "value"}
+                                                                        ]
+
+                                                                }
+
+
+                                                        ]
+
+                                                },
+                                                {"name" : "leaf-id"},
+                                                {
+                                                        "name" : "hard-reset",
+                                                        "fields" : [
+                                                                {"name" : "value"}
+                                                        ]
+
+                                                },
+                                                {"name" : "node-key"},
+                                                {"name" : "period-hi"},
+                                                {"name" : "period-lo"},
+                                                {"name" : "threshold-hi"},
+                                                {"name" : "threshold-lo"}
+
+                                        ]
+                                }
+
+                        ]
+                }
+        },
+	{
+                "basepath" : "Cisco-IOS-XR-asic-errors-oper:asic-errors/nodes/node/asic-information/instances/instance/error-path/configuration-hard-errors",
+                "spec" : {
+                        "fields" : [
+                                {"name" : "asic", "tag" : true},
+                                {"name" : "asic-instance", "tag": true},
+                                {"name" : "node", "tag": true},
+                                {
+                                        "name": "error",
+                                        "fields" : [
+
+
+                                                {
+                                                        "name" : "alarm-on",
+                                                        "fields" : [
+                                                                {"name" : "value"}
+                                                        ]
+
+                                                },
+                                                {
+                                                        "name" : "asic-info",
+                                                        "fields" : [
+                                                                {"name" : "value"}
+                                                        ]
+
+                                                },
+                                                {"name" : "count"},
+                                                {"name" : "intr-type"},
+                                                {"name" : "last-cleared"},
+                                                {
+                                                        "name" : "last-err",
+                                                        "fields" : [
+                                                                {"name":"at-time"},
+                                                                {"name":"at-time-nsec"},
+                                                                {"name":"counter-val"},
+                                                                {
+                                                                        "name" : "error-desc",
+                                                                        "fields" : [
+                                                                                {"name" : "value"}
+                                                                        ]
+
+                                                                }
+
+
+                                                        ]
+
+                                                },
+                                                {"name" : "leaf-id"},
+                                                {
+                                                        "name" : "hard-reset",
+                                                        "fields" : [
+                                                                {"name" : "value"}
+                                                        ]
+
+                                                },
+                                                {"name" : "node-key"},
+                                                {"name" : "period-hi"},
+                                                {"name" : "period-lo"},
+                                                {"name" : "threshold-hi"},
+                                                {"name" : "threshold-lo"}
+
+                                        ]
+                                }
+
+                        ]
+                }
+        },
+	{
+                "basepath" : "Cisco-IOS-XR-asic-errors-oper:asic-errors/nodes/node/asic-information/instances/instance/error-path/link-hard-errors",
+                "spec" : {
+                        "fields" : [
+                                {"name" : "asic", "tag" : true},
+                                {"name" : "asic-instance", "tag": true},
+                                {"name" : "node", "tag": true},
+                                {
+                                        "name": "error",
+                                        "fields" : [
+
+
+                                                {
+                                                        "name" : "alarm-on",
+                                                        "fields" : [
+                                                                {"name" : "value"}
+                                                        ]
+
+                                                },
+                                                {
+                                                        "name" : "asic-info",
+                                                        "fields" : [
+                                                                {"name" : "value"}
+                                                        ]
+
+                                                },
+                                                {"name" : "count"},
+                                                {"name" : "intr-type"},
+                                                {"name" : "last-cleared"},
+                                                {
+                                                        "name" : "last-err",
+                                                        "fields" : [
+                                                                {"name":"at-time"},
+                                                                {"name":"at-time-nsec"},
+                                                                {"name":"counter-val"},
+                                                                {
+                                                                        "name" : "error-desc",
+                                                                        "fields" : [
+                                                                                {"name" : "value"}
+                                                                        ]
+
+                                                                }
+
+
+                                                        ]
+
+                                                },
+                                                {"name" : "leaf-id"},
+                                                {
+                                                        "name" : "hard-reset",
+                                                        "fields" : [
+                                                                {"name" : "value"}
+                                                        ]
+
+                                                },
+                                                {"name" : "node-key"},
+                                                {"name" : "period-hi"},
+                                                {"name" : "period-lo"},
+                                                {"name" : "threshold-hi"},
+                                                {"name" : "threshold-lo"}
+
+                                        ]
+                                }
+
+                        ]
+                }
+        },
+	{
+                "basepath" : "Cisco-IOS-XR-asic-errors-oper:asic-errors/nodes/node/asic-information/instances/instance/error-path/generic-hard-errors",
+                "spec" : {
+                        "fields" : [
+                                {"name" : "asic", "tag" : true},
+                                {"name" : "asic-instance", "tag": true},
+                                {"name" : "node", "tag": true},
+                                {
+                                        "name": "error",
+                                        "fields" : [
+
+
+                                                {
+                                                        "name" : "alarm-on",
+                                                        "fields" : [
+                                                                {"name" : "value"}
+                                                        ]
+
+                                                },
+                                                {
+                                                        "name" : "asic-info",
+                                                        "fields" : [
+                                                                {"name" : "value"}
+                                                        ]
+
+                                                },
+                                                {"name" : "count"},
+                                                {"name" : "intr-type"},
+                                                {"name" : "last-cleared"},
+                                                {
+                                                        "name" : "last-err",
+                                                        "fields" : [
+                                                                {"name":"at-time"},
+                                                                {"name":"at-time-nsec"},
+                                                                {"name":"counter-val"},
+                                                                {
+                                                                        "name" : "error-desc",
+                                                                        "fields" : [
+                                                                                {"name" : "value"}
+                                                                        ]
+
+                                                                }
+
+
+                                                        ]
+
+                                                },
+                                                {"name" : "leaf-id"},
+                                                {
+                                                        "name" : "hard-reset",
+                                                        "fields" : [
+                                                                {"name" : "value"}
+                                                        ]
+
+                                                },
+                                                {"name" : "node-key"},
+                                                {"name" : "period-hi"},
+                                                {"name" : "period-lo"},
+                                                {"name" : "threshold-hi"},
+                                                {"name" : "threshold-lo"}
+
+                                        ]
+                                }
+
+                        ]
+                }
+        },
+	{
+                "basepath" : "Cisco-IOS-XR-asic-errors-oper:asic-errors/nodes/node/asic-information/instances/instance/error-path/indirect-soft-errors",
+                "spec" : {
+                        "fields" : [
+                                {"name" : "asic", "tag" : true},
+                                {"name" : "asic-instance", "tag": true},
+                                {"name" : "node", "tag": true},
+                                {
+                                        "name": "error",
+                                        "fields" : [
+
+
+                                                {
+                                                        "name" : "alarm-on",
+                                                        "fields" : [
+                                                                {"name" : "value"}
+                                                        ]
+
+                                                },
+                                                {
+                                                        "name" : "asic-info",
+                                                        "fields" : [
+                                                                {"name" : "value"}
+                                                        ]
+
+                                                },
+                                                {"name" : "count"},
+                                                {"name" : "intr-type"},
+                                                {"name" : "last-cleared"},
+                                                {
+                                                        "name" : "last-err",
+                                                        "fields" : [
+                                                                {"name":"at-time"},
+                                                                {"name":"at-time-nsec"},
+                                                                {"name":"counter-val"},
+                                                                {
+                                                                        "name" : "error-desc",
+                                                                        "fields" : [
+                                                                                {"name" : "value"}
+                                                                        ]
+
+                                                                }
+
+
+                                                        ]
+
+                                                },
+                                                {"name" : "leaf-id"},
+                                                {
+                                                        "name" : "hard-reset",
+                                                        "fields" : [
+                                                                {"name" : "value"}
+                                                        ]
+
+                                                },
+                                                {"name" : "node-key"},
+                                                {"name" : "period-hi"},
+                                                {"name" : "period-lo"},
+                                                {"name" : "threshold-hi"},
+                                                {"name" : "threshold-lo"}
+
+                                        ]
+                                }
+
+                        ]
+                }
+        },
+	{
+                "basepath" : "Cisco-IOS-XR-asic-errors-oper:asic-errors/nodes/node/asic-information/instances/instance/error-path/single-bit-soft-errors",
+                "spec" : {
+                        "fields" : [
+                                {"name" : "asic", "tag" : true},
+                                {"name" : "asic-instance", "tag": true},
+                                {"name" : "node", "tag": true},
+                                {
+                                        "name": "error",
+                                        "fields" : [
+
+
+                                                {
+                                                        "name" : "alarm-on",
+                                                        "fields" : [
+                                                                {"name" : "value"}
+                                                        ]
+
+                                                },
+                                                {
+                                                        "name" : "asic-info",
+                                                        "fields" : [
+                                                                {"name" : "value"}
+                                                        ]
+
+                                                },
+                                                {"name" : "count"},
+                                                {"name" : "intr-type"},
+                                                {"name" : "last-cleared"},
+                                                {
+                                                        "name" : "last-err",
+                                                        "fields" : [
+                                                                {"name":"at-time"},
+                                                                {"name":"at-time-nsec"},
+                                                                {"name":"counter-val"},
+                                                                {
+                                                                        "name" : "error-desc",
+                                                                        "fields" : [
+                                                                                {"name" : "value"}
+                                                                        ]
+
+                                                                }
+
+
+                                                        ]
+
+                                                },
+                                                {"name" : "leaf-id"},
+                                                {
+                                                        "name" : "hard-reset",
+                                                        "fields" : [
+                                                                {"name" : "value"}
+                                                        ]
+
+                                                },
+                                                {"name" : "node-key"},
+                                                {"name" : "period-hi"},
+                                                {"name" : "period-lo"},
+                                                {"name" : "threshold-hi"},
+                                                {"name" : "threshold-lo"}
+
+                                        ]
+                                }
+
+                        ]
+                }
+        },
+	{
+                "basepath" : "Cisco-IOS-XR-asic-errors-oper:asic-errors/nodes/node/asic-information/instances/instance/error-path/back-pressure-hard-errors",
+                "spec" : {
+                        "fields" : [
+                                {"name" : "asic", "tag" : true},
+                                {"name" : "asic-instance", "tag": true},
+                                {"name" : "node", "tag": true},
+                                {
+                                        "name": "error",
+                                        "fields" : [
+
+
+                                                {
+                                                        "name" : "alarm-on",
+                                                        "fields" : [
+                                                                {"name" : "value"}
+                                                        ]
+
+                                                },
+                                                {
+                                                        "name" : "asic-info",
+                                                        "fields" : [
+                                                                {"name" : "value"}
+                                                        ]
+
+                                                },
+                                                {"name" : "count"},
+                                                {"name" : "intr-type"},
+                                                {"name" : "last-cleared"},
+                                                {
+                                                        "name" : "last-err",
+                                                        "fields" : [
+                                                                {"name":"at-time"},
+                                                                {"name":"at-time-nsec"},
+                                                                {"name":"counter-val"},
+                                                                {
+                                                                        "name" : "error-desc",
+                                                                        "fields" : [
+                                                                                {"name" : "value"}
+                                                                        ]
+
+                                                                }
+
+
+                                                        ]
+
+                                                },
+                                                {"name" : "leaf-id"},
+                                                {
+                                                        "name" : "hard-reset",
+                                                        "fields" : [
+                                                                {"name" : "value"}
+                                                        ]
+
+                                                },
+                                                {"name" : "node-key"},
+                                                {"name" : "period-hi"},
+                                                {"name" : "period-lo"},
+                                                {"name" : "threshold-hi"},
+                                                {"name" : "threshold-lo"}
+
+                                        ]
+                                }
+
+                        ]
+                }
+        },
+	{
+                "basepath" : "Cisco-IOS-XR-asic-errors-oper:asic-errors/nodes/node/asic-information/instances/instance/error-path/barrier-soft-errors",
+                "spec" : {
+                        "fields" : [
+                                {"name" : "asic", "tag" : true},
+                                {"name" : "asic-instance", "tag": true},
+                                {"name" : "node", "tag": true},
+                                {
+                                        "name": "error",
+                                        "fields" : [
+
+
+                                                {
+                                                        "name" : "alarm-on",
+                                                        "fields" : [
+                                                                {"name" : "value"}
+                                                        ]
+
+                                                },
+                                                {
+                                                        "name" : "asic-info",
+                                                        "fields" : [
+                                                                {"name" : "value"}
+                                                        ]
+
+                                                },
+                                                {"name" : "count"},
+                                                {"name" : "intr-type"},
+                                                {"name" : "last-cleared"},
+                                                {
+                                                        "name" : "last-err",
+                                                        "fields" : [
+                                                                {"name":"at-time"},
+                                                                {"name":"at-time-nsec"},
+                                                                {"name":"counter-val"},
+                                                                {
+                                                                        "name" : "error-desc",
+                                                                        "fields" : [
+                                                                                {"name" : "value"}
+                                                                        ]
+
+                                                                }
+
+
+                                                        ]
+
+                                                },
+                                                {"name" : "leaf-id"},
+                                                {
+                                                        "name" : "hard-reset",
+                                                        "fields" : [
+                                                                {"name" : "value"}
+                                                        ]
+
+                                                },
+                                                {"name" : "node-key"},
+                                                {"name" : "period-hi"},
+                                                {"name" : "period-lo"},
+                                                {"name" : "threshold-hi"},
+                                                {"name" : "threshold-lo"}
+
+                                        ]
+                                }
+
+                        ]
+                }
+        },
+	{
+                "basepath" : "Cisco-IOS-XR-asic-errors-oper:asic-errors/nodes/node/asic-information/instances/instance/error-path/time-out-hard-errors",
+                "spec" : {
+                        "fields" : [
+                                {"name" : "asic", "tag" : true},
+                                {"name" : "asic-instance", "tag": true},
+                                {"name" : "node", "tag": true},
+                                {
+                                        "name": "error",
+                                        "fields" : [
+
+
+                                                {
+                                                        "name" : "alarm-on",
+                                                        "fields" : [
+                                                                {"name" : "value"}
+                                                        ]
+
+                                                },
+                                                {
+                                                        "name" : "asic-info",
+                                                        "fields" : [
+                                                                {"name" : "value"}
+                                                        ]
+
+                                                },
+                                                {"name" : "count"},
+                                                {"name" : "intr-type"},
+                                                {"name" : "last-cleared"},
+                                                {
+                                                        "name" : "last-err",
+                                                        "fields" : [
+                                                                {"name":"at-time"},
+                                                                {"name":"at-time-nsec"},
+                                                                {"name":"counter-val"},
+                                                                {
+                                                                        "name" : "error-desc",
+                                                                        "fields" : [
+                                                                                {"name" : "value"}
+                                                                        ]
+
+                                                                }
+
+
+                                                        ]
+
+                                                },
+                                                {"name" : "leaf-id"},
+                                                {
+                                                        "name" : "hard-reset",
+                                                        "fields" : [
+                                                                {"name" : "value"}
+                                                        ]
+
+                                                },
+                                                {"name" : "node-key"},
+                                                {"name" : "period-hi"},
+                                                {"name" : "period-lo"},
+                                                {"name" : "threshold-hi"},
+                                                {"name" : "threshold-lo"}
+
+                                        ]
+                                }
+
+                        ]
+                }
+        },
+	{
+                "basepath" : "Cisco-IOS-XR-asic-errors-oper:asic-errors/nodes/node/asic-information/instances/instance/error-path/crc-soft-errors",
+                "spec" : {
+                        "fields" : [
+                                {"name" : "asic", "tag" : true},
+                                {"name" : "asic-instance", "tag": true},
+                                {"name" : "node", "tag": true},
+                                {
+                                        "name": "error",
+                                        "fields" : [
+
+
+                                                {
+                                                        "name" : "alarm-on",
+                                                        "fields" : [
+                                                                {"name" : "value"}
+                                                        ]
+
+                                                },
+                                                {
+                                                        "name" : "asic-info",
+                                                        "fields" : [
+                                                                {"name" : "value"}
+                                                        ]
+
+                                                },
+                                                {"name" : "count"},
+                                                {"name" : "intr-type"},
+                                                {"name" : "last-cleared"},
+                                                {
+                                                        "name" : "last-err",
+                                                        "fields" : [
+                                                                {"name":"at-time"},
+                                                                {"name":"at-time-nsec"},
+                                                                {"name":"counter-val"},
+                                                                {
+                                                                        "name" : "error-desc",
+                                                                        "fields" : [
+                                                                                {"name" : "value"}
+                                                                        ]
+
+                                                                }
+
+
+                                                        ]
+
+                                                },
+                                                {"name" : "leaf-id"},
+                                                {
+                                                        "name" : "hard-reset",
+                                                        "fields" : [
+                                                                {"name" : "value"}
+                                                        ]
+
+                                                },
+                                                {"name" : "node-key"},
+                                                {"name" : "period-hi"},
+                                                {"name" : "period-lo"},
+                                                {"name" : "threshold-hi"},
+                                                {"name" : "threshold-lo"}
+
+                                        ]
+                                }
+
+                        ]
+                }
+        },
+	{
+                "basepath" : "Cisco-IOS-XR-asic-errors-oper:asic-errors/nodes/node/asic-information/instances/instance/error-path/outof-resource-soft",
+                "spec" : {
+                        "fields" : [
+                                {"name" : "asic", "tag" : true},
+                                {"name" : "asic-instance", "tag": true},
+                                {"name" : "node", "tag": true},
+                                {
+                                        "name": "error",
+                                        "fields" : [
+
+
+                                                {
+                                                        "name" : "alarm-on",
+                                                        "fields" : [
+                                                                {"name" : "value"}
+                                                        ]
+
+                                                },
+                                                {
+                                                        "name" : "asic-info",
+                                                        "fields" : [
+                                                                {"name" : "value"}
+                                                        ]
+
+                                                },
+                                                {"name" : "count"},
+                                                {"name" : "intr-type"},
+                                                {"name" : "last-cleared"},
+                                                {
+                                                        "name" : "last-err",
+                                                        "fields" : [
+                                                                {"name":"at-time"},
+                                                                {"name":"at-time-nsec"},
+                                                                {"name":"counter-val"},
+                                                                {
+                                                                        "name" : "error-desc",
+                                                                        "fields" : [
+                                                                                {"name" : "value"}
+                                                                        ]
+
+                                                                }
+
+
+                                                        ]
+
+                                                },
+                                                {"name" : "leaf-id"},
+                                                {
+                                                        "name" : "hard-reset",
+                                                        "fields" : [
+                                                                {"name" : "value"}
+                                                        ]
+
+                                                },
+                                                {"name" : "node-key"},
+                                                {"name" : "period-hi"},
+                                                {"name" : "period-lo"},
+                                                {"name" : "threshold-hi"},
+                                                {"name" : "threshold-lo"}
+
+                                        ]
+                                }
+
+                        ]
+                }
+        },
+	{
+                "basepath" : "Cisco-IOS-XR-asic-errors-oper:asic-errors/nodes/node/asic-information/instances/instance/error-path/indirect-hard-errors",
+                "spec" : {
+                        "fields" : [
+                                {"name" : "asic", "tag" : true},
+                                {"name" : "asic-instance", "tag": true},
+                                {"name" : "node", "tag": true},
+                                {
+                                        "name": "error",
+                                        "fields" : [
+
+
+                                                {
+                                                        "name" : "alarm-on",
+                                                        "fields" : [
+                                                                {"name" : "value"}
+                                                        ]
+
+                                                },
+                                                {
+                                                        "name" : "asic-info",
+                                                        "fields" : [
+                                                                {"name" : "value"}
+                                                        ]
+
+                                                },
+                                                {"name" : "count"},
+                                                {"name" : "intr-type"},
+                                                {"name" : "last-cleared"},
+                                                {
+                                                        "name" : "last-err",
+                                                        "fields" : [
+                                                                {"name":"at-time"},
+                                                                {"name":"at-time-nsec"},
+                                                                {"name":"counter-val"},
+                                                                {
+                                                                        "name" : "error-desc",
+                                                                        "fields" : [
+                                                                                {"name" : "value"}
+                                                                        ]
+
+                                                                }
+
+
+                                                        ]
+
+                                                },
+                                                {"name" : "leaf-id"},
+                                                {
+                                                        "name" : "hard-reset",
+                                                        "fields" : [
+                                                                {"name" : "value"}
+                                                        ]
+
+                                                },
+                                                {"name" : "node-key"},
+                                                {"name" : "period-hi"},
+                                                {"name" : "period-lo"},
+                                                {"name" : "threshold-hi"},
+                                                {"name" : "threshold-lo"}
+
+                                        ]
+                                }
+
+                        ]
+                }
+        },
+	{
+                "basepath" : "Cisco-IOS-XR-asic-errors-oper:asic-errors/nodes/node/asic-information/instances/instance/error-path/single-bit-hard-errors",
+                "spec" : {
+                        "fields" : [
+                                {"name" : "asic", "tag" : true},
+                                {"name" : "asic-instance", "tag": true},
+                                {"name" : "node", "tag": true},
+                                {
+                                        "name": "error",
+                                        "fields" : [
+
+
+                                                {
+                                                        "name" : "alarm-on",
+                                                        "fields" : [
+                                                                {"name" : "value"}
+                                                        ]
+
+                                                },
+                                                {
+                                                        "name" : "asic-info",
+                                                        "fields" : [
+                                                                {"name" : "value"}
+                                                        ]
+
+                                                },
+                                                {"name" : "count"},
+                                                {"name" : "intr-type"},
+                                                {"name" : "last-cleared"},
+                                                {
+                                                        "name" : "last-err",
+                                                        "fields" : [
+                                                                {"name":"at-time"},
+                                                                {"name":"at-time-nsec"},
+                                                                {"name":"counter-val"},
+                                                                {
+                                                                        "name" : "error-desc",
+                                                                        "fields" : [
+                                                                                {"name" : "value"}
+                                                                        ]
+
+                                                                }
+
+
+                                                        ]
+
+                                                },
+                                                {"name" : "leaf-id"},
+                                                {
+                                                        "name" : "hard-reset",
+                                                        "fields" : [
+                                                                {"name" : "value"}
+                                                        ]
+
+                                                },
+                                                {"name" : "node-key"},
+                                                {"name" : "period-hi"},
+                                                {"name" : "period-lo"},
+                                                {"name" : "threshold-hi"},
+                                                {"name" : "threshold-lo"}
+
+                                        ]
+                                }
+
+                        ]
+                }
+        },
+	{
+                "basepath" : "Cisco-IOS-XR-asic-errors-oper:asic-errors/nodes/node/asic-information/instances/instance/error-path/ucode-soft-errors",
+                "spec" : {
+                        "fields" : [
+                                {"name" : "asic", "tag" : true},
+                                {"name" : "asic-instance", "tag": true},
+                                {"name" : "node", "tag": true},
+                                {
+                                        "name": "error",
+                                        "fields" : [
+
+
+                                                {
+                                                        "name" : "alarm-on",
+                                                        "fields" : [
+                                                                {"name" : "value"}
+                                                        ]
+
+                                                },
+                                                {
+                                                        "name" : "asic-info",
+                                                        "fields" : [
+                                                                {"name" : "value"}
+                                                        ]
+
+                                                },
+                                                {"name" : "count"},
+                                                {"name" : "intr-type"},
+                                                {"name" : "last-cleared"},
+                                                {
+                                                        "name" : "last-err",
+                                                        "fields" : [
+                                                                {"name":"at-time"},
+                                                                {"name":"at-time-nsec"},
+                                                                {"name":"counter-val"},
+                                                                {
+                                                                        "name" : "error-desc",
+                                                                        "fields" : [
+                                                                                {"name" : "value"}
+                                                                        ]
+
+                                                                }
+
+
+                                                        ]
+
+                                                },
+                                                {"name" : "leaf-id"},
+                                                {
+                                                        "name" : "hard-reset",
+                                                        "fields" : [
+                                                                {"name" : "value"}
+                                                        ]
+
+                                                },
+                                                {"name" : "node-key"},
+                                                {"name" : "period-hi"},
+                                                {"name" : "period-lo"},
+                                                {"name" : "threshold-hi"},
+                                                {"name" : "threshold-lo"}
+
+                                        ]
+                                }
+
+                        ]
+                }
+        },
+	{
+                "basepath" : "Cisco-IOS-XR-asic-errors-oper:asic-errors/nodes/node/asic-information/instances/instance/error-path/barrier-hard-errors",
+                "spec" : {
+                        "fields" : [
+                                {"name" : "asic", "tag" : true},
+                                {"name" : "asic-instance", "tag": true},
+                                {"name" : "node", "tag": true},
+                                {
+                                        "name": "error",
+                                        "fields" : [
+
+
+                                                {
+                                                        "name" : "alarm-on",
+                                                        "fields" : [
+                                                                {"name" : "value"}
+                                                        ]
+
+                                                },
+                                                {
+                                                        "name" : "asic-info",
+                                                        "fields" : [
+                                                                {"name" : "value"}
+                                                        ]
+
+                                                },
+                                                {"name" : "count"},
+                                                {"name" : "intr-type"},
+                                                {"name" : "last-cleared"},
+                                                {
+                                                        "name" : "last-err",
+                                                        "fields" : [
+                                                                {"name":"at-time"},
+                                                                {"name":"at-time-nsec"},
+                                                                {"name":"counter-val"},
+                                                                {
+                                                                        "name" : "error-desc",
+                                                                        "fields" : [
+                                                                                {"name" : "value"}
+                                                                        ]
+
+                                                                }
+
+
+                                                        ]
+
+                                                },
+                                                {"name" : "leaf-id"},
+                                                {
+                                                        "name" : "hard-reset",
+                                                        "fields" : [
+                                                                {"name" : "value"}
+                                                        ]
+
+                                                },
+                                                {"name" : "node-key"},
+                                                {"name" : "period-hi"},
+                                                {"name" : "period-lo"},
+                                                {"name" : "threshold-hi"},
+                                                {"name" : "threshold-lo"}
+
+                                        ]
+                                }
+
+                        ]
+                }
+        },
+	{
+                "basepath" : "Cisco-IOS-XR-asic-errors-oper:asic-errors/nodes/node/asic-information/instances/instance/error-path/reset-soft-errors",
+                "spec" : {
+                        "fields" : [
+                                {"name" : "asic", "tag" : true},
+                                {"name" : "asic-instance", "tag": true},
+                                {"name" : "node", "tag": true},
+                                {
+                                        "name": "error",
+                                        "fields" : [
+
+
+                                                {
+                                                        "name" : "alarm-on",
+                                                        "fields" : [
+                                                                {"name" : "value"}
+                                                        ]
+
+                                                },
+                                                {
+                                                        "name" : "asic-info",
+                                                        "fields" : [
+                                                                {"name" : "value"}
+                                                        ]
+
+                                                },
+                                                {"name" : "count"},
+                                                {"name" : "intr-type"},
+                                                {"name" : "last-cleared"},
+                                                {
+                                                        "name" : "last-err",
+                                                        "fields" : [
+                                                                {"name":"at-time"},
+                                                                {"name":"at-time-nsec"},
+                                                                {"name":"counter-val"},
+                                                                {
+                                                                        "name" : "error-desc",
+                                                                        "fields" : [
+                                                                                {"name" : "value"}
+                                                                        ]
+
+                                                                }
+
+
+                                                        ]
+
+                                                },
+                                                {"name" : "leaf-id"},
+                                                {
+                                                        "name" : "hard-reset",
+                                                        "fields" : [
+                                                                {"name" : "value"}
+                                                        ]
+
+                                                },
+                                                {"name" : "node-key"},
+                                                {"name" : "period-hi"},
+                                                {"name" : "period-lo"},
+                                                {"name" : "threshold-hi"},
+                                                {"name" : "threshold-lo"}
+
+                                        ]
+                                }
+
+                        ]
+                }
+        },
+	{
+                "basepath" : "Cisco-IOS-XR-asic-errors-oper:asic-errors/nodes/node/asic-information/instances/instance/error-path/io-soft-errors",
+                "spec" : {
+                        "fields" : [
+                                {"name" : "asic", "tag" : true},
+                                {"name" : "asic-instance", "tag": true},
+                                {"name" : "node", "tag": true},
+                                {
+                                        "name": "error",
+                                        "fields" : [
+
+
+                                                {
+                                                        "name" : "alarm-on",
+                                                        "fields" : [
+                                                                {"name" : "value"}
+                                                        ]
+
+                                                },
+                                                {
+                                                        "name" : "asic-info",
+                                                        "fields" : [
+                                                                {"name" : "value"}
+                                                        ]
+
+                                                },
+                                                {"name" : "count"},
+                                                {"name" : "intr-type"},
+                                                {"name" : "last-cleared"},
+                                                {
+                                                        "name" : "last-err",
+                                                        "fields" : [
+                                                                {"name":"at-time"},
+                                                                {"name":"at-time-nsec"},
+                                                                {"name":"counter-val"},
+                                                                {
+                                                                        "name" : "error-desc",
+                                                                        "fields" : [
+                                                                                {"name" : "value"}
+                                                                        ]
+
+                                                                }
+
+
+                                                        ]
+
+                                                },
+                                                {"name" : "leaf-id"},
+                                                {
+                                                        "name" : "hard-reset",
+                                                        "fields" : [
+                                                                {"name" : "value"}
+                                                        ]
+
+                                                },
+                                                {"name" : "node-key"},
+                                                {"name" : "period-hi"},
+                                                {"name" : "period-lo"},
+                                                {"name" : "threshold-hi"},
+                                                {"name" : "threshold-lo"}
+
+                                        ]
+                                }
+
+                        ]
+                }
+        },
+	{
+                "basepath" : "Cisco-IOS-XR-asic-errors-oper:asic-errors/nodes/node/asic-information/instances/instance/error-path/hardware-soft-errors",
+                "spec" : {
+                        "fields" : [
+                                {"name" : "asic", "tag" : true},
+                                {"name" : "asic-instance", "tag": true},
+                                {"name" : "node", "tag": true},
+                                {
+                                        "name": "error",
+                                        "fields" : [
+
+
+                                                {
+                                                        "name" : "alarm-on",
+                                                        "fields" : [
+                                                                {"name" : "value"}
+                                                        ]
+
+                                                },
+                                                {
+                                                        "name" : "asic-info",
+                                                        "fields" : [
+                                                                {"name" : "value"}
+                                                        ]
+
+                                                },
+                                                {"name" : "count"},
+                                                {"name" : "intr-type"},
+                                                {"name" : "last-cleared"},
+                                                {
+                                                        "name" : "last-err",
+                                                        "fields" : [
+                                                                {"name":"at-time"},
+                                                                {"name":"at-time-nsec"},
+                                                                {"name":"counter-val"},
+                                                                {
+                                                                        "name" : "error-desc",
+                                                                        "fields" : [
+                                                                                {"name" : "value"}
+                                                                        ]
+
+                                                                }
+
+
+                                                        ]
+
+                                                },
+                                                {"name" : "leaf-id"},
+                                                {
+                                                        "name" : "hard-reset",
+                                                        "fields" : [
+                                                                {"name" : "value"}
+                                                        ]
+
+                                                },
+                                                {"name" : "node-key"},
+                                                {"name" : "period-hi"},
+                                                {"name" : "period-lo"},
+                                                {"name" : "threshold-hi"},
+                                                {"name" : "threshold-lo"}
+
+                                        ]
+                                }
+
+                        ]
+                }
+        },
+	{
+                "basepath" : "Cisco-IOS-XR-asic-errors-oper:asic-errors/nodes/node/asic-information/instances/instance/error-path/crc-hard-errors",
+                "spec" : {
+                        "fields" : [
+                                {"name" : "asic", "tag" : true},
+                                {"name" : "asic-instance", "tag": true},
+                                {"name" : "node", "tag": true},
+                                {
+                                        "name": "error",
+                                        "fields" : [
+
+
+                                                {
+                                                        "name" : "alarm-on",
+                                                        "fields" : [
+                                                                {"name" : "value"}
+                                                        ]
+
+                                                },
+                                                {
+                                                        "name" : "asic-info",
+                                                        "fields" : [
+                                                                {"name" : "value"}
+                                                        ]
+
+                                                },
+                                                {"name" : "count"},
+                                                {"name" : "intr-type"},
+                                                {"name" : "last-cleared"},
+                                                {
+                                                        "name" : "last-err",
+                                                        "fields" : [
+                                                                {"name":"at-time"},
+                                                                {"name":"at-time-nsec"},
+                                                                {"name":"counter-val"},
+                                                                {
+                                                                        "name" : "error-desc",
+                                                                        "fields" : [
+                                                                                {"name" : "value"}
+                                                                        ]
+
+                                                                }
+
+
+                                                        ]
+
+                                                },
+                                                {"name" : "leaf-id"},
+                                                {
+                                                        "name" : "hard-reset",
+                                                        "fields" : [
+                                                                {"name" : "value"}
+                                                        ]
+
+                                                },
+                                                {"name" : "node-key"},
+                                                {"name" : "period-hi"},
+                                                {"name" : "period-lo"},
+                                                {"name" : "threshold-hi"},
+                                                {"name" : "threshold-lo"}
+
+                                        ]
+                                }
+
+                        ]
+                }
+        },
+	{
+                "basepath" : "Cisco-IOS-XR-asic-errors-oper:asic-errors/nodes/node/asic-information/instances/instance/error-path/multiple-bit-soft-errors",
+                "spec" : {
+                        "fields" : [
+                                {"name" : "asic", "tag" : true},
+                                {"name" : "asic-instance", "tag": true},
+                                {"name" : "node", "tag": true},
+                                {
+                                        "name": "error",
+                                        "fields" : [
+
+
+                                                {
+                                                        "name" : "alarm-on",
+                                                        "fields" : [
+                                                                {"name" : "value"}
+                                                        ]
+
+                                                },
+                                                {
+                                                        "name" : "asic-info",
+                                                        "fields" : [
+                                                                {"name" : "value"}
+                                                        ]
+
+                                                },
+                                                {"name" : "count"},
+                                                {"name" : "intr-type"},
+                                                {"name" : "last-cleared"},
+                                                {
+                                                        "name" : "last-err",
+                                                        "fields" : [
+                                                                {"name":"at-time"},
+                                                                {"name":"at-time-nsec"},
+                                                                {"name":"counter-val"},
+                                                                {
+                                                                        "name" : "error-desc",
+                                                                        "fields" : [
+                                                                                {"name" : "value"}
+                                                                        ]
+
+                                                                }
+
+
+                                                        ]
+
+                                                },
+                                                {"name" : "leaf-id"},
+                                                {
+                                                        "name" : "hard-reset",
+                                                        "fields" : [
+                                                                {"name" : "value"}
+                                                        ]
+
+                                                },
+                                                {"name" : "node-key"},
+                                                {"name" : "period-hi"},
+                                                {"name" : "period-lo"},
+                                                {"name" : "threshold-hi"},
+                                                {"name" : "threshold-lo"}
+
+                                        ]
+                                }
+
+                        ]
+                }
+        },
+	{
+                "basepath" : "Cisco-IOS-XR-asic-errors-oper:asic-errors/nodes/node/asic-information/instances/instance/error-path/ucode-hard-errors",
+                "spec" : {
+                        "fields" : [
+                                {"name" : "asic", "tag" : true},
+                                {"name" : "asic-instance", "tag": true},
+                                {"name" : "node", "tag": true},
+                                {
+                                        "name": "error",
+                                        "fields" : [
+
+
+                                                {
+                                                        "name" : "alarm-on",
+                                                        "fields" : [
+                                                                {"name" : "value"}
+                                                        ]
+
+                                                },
+                                                {
+                                                        "name" : "asic-info",
+                                                        "fields" : [
+                                                                {"name" : "value"}
+                                                        ]
+
+                                                },
+                                                {"name" : "count"},
+                                                {"name" : "intr-type"},
+                                                {"name" : "last-cleared"},
+                                                {
+                                                        "name" : "last-err",
+                                                        "fields" : [
+                                                                {"name":"at-time"},
+                                                                {"name":"at-time-nsec"},
+                                                                {"name":"counter-val"},
+                                                                {
+                                                                        "name" : "error-desc",
+                                                                        "fields" : [
+                                                                                {"name" : "value"}
+                                                                        ]
+
+                                                                }
+
+
+                                                        ]
+
+                                                },
+                                                {"name" : "leaf-id"},
+                                                {
+                                                        "name" : "hard-reset",
+                                                        "fields" : [
+                                                                {"name" : "value"}
+                                                        ]
+
+                                                },
+                                                {"name" : "node-key"},
+                                                {"name" : "period-hi"},
+                                                {"name" : "period-lo"},
+                                                {"name" : "threshold-hi"},
+                                                {"name" : "threshold-lo"}
+
+                                        ]
+                                }
+
+                        ]
+                }
+        }
+
+
+	
+
+	
+]
