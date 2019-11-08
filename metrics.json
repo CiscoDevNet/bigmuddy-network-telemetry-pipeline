@@ -1,4 +1,300 @@
-[
+[   
+        {
+		"basepath" : "Cisco-IOS-XR-sysadmin-envmon-ui:envmon/environment/oper/current/location/sensor_attributes",
+		"spec" : {
+			"fields" : [
+				{"name" : "location", "tag" : true},
+				{"name" : "sensor", "tag": true},
+				{
+					"name" : "alarm",  
+				        "fields" : [
+   						{"name" : "value"}
+					]
+
+                                },
+				{
+					"name" : "sensor-id",  
+				        "fields" : [
+   						{"name" : "value","tag":true}
+					]
+
+                                },
+				{
+					"name" : "value",  
+				        "fields" : [
+   						{"name" : "value"}
+					]
+
+                                }
+
+
+
+			]
+		}
+	},
+	{
+		"basepath" : "Cisco-IOS-XR-sysadmin-envmon-ui:envmon/environment/oper/temperatures/location/sensor_attributes",
+		"spec" : {
+			"fields" : [
+				{"name" : "location", "tag" : true},
+				{"name" : "sensor", "tag": true},
+				{
+					"name" : "alarm",  
+				        "fields" : [
+   						{"name" : "value"}
+					]
+
+                                },
+                                {"name" : "critical-hi"},
+				{"name" : "critical-lo"},
+				{"name" : "major-hi"},
+				{"name" : "major-lo"},
+				{"name" : "minor-hi"},
+				{"name" : "minor-lo"},
+				{
+					"name" : "sensor-id",  
+				        "fields" : [
+   						{"name" : "value"}
+					]
+
+                                },
+				{
+					"name" : "temperature-value",  
+				        "fields" : [
+   						{"name" : "value"}
+					]
+
+                                },
+				{"name" : "value"}
+
+
+
+			]
+		}
+	},
+	{
+		"basepath" : "Cisco-IOS-XR-sysadmin-envmon-ui:envmon/environment/oper/voltages/location/sensor_attributes",
+		"spec" : {
+			"fields" : [
+				{"name" : "location", "tag" : true},
+				{"name" : "sensor", "tag": true},
+				{
+					"name" : "alarm",  
+				        "fields" : [
+   						{"name" : "value"}
+					]
+
+                                },
+                                {"name" : "critical-hi"},
+				{"name" : "critical-lo"},
+				{"name" : "major-hi"},
+				{"name" : "major-lo"},
+				{"name" : "minor-hi"},
+				{"name" : "minor-lo"},
+				{
+					"name" : "sensor-id",  
+				        "fields" : [
+   						{"name" : "value"}
+					]
+
+                                },
+				{
+					"name" : "temperature-value",  
+				        "fields" : [
+   						{"name" : "value"}
+					]
+
+                                },
+				{
+					"name" : "value",  
+				        "fields" : [
+   						{"name" : "value"}
+					]
+
+                                }
+
+
+
+
+			]
+		}
+	},
+        {
+		"basepath" : "Cisco-IOS-XR-sysadmin-envmon-ui:envmon/environment/oper/power/location/pem_attributes",
+		"spec" : {
+			"fields" : [
+				{"name" : "location", "tag" : true},
+				{"name" : "pem", "tag": true},
+				{
+					"name" : "pem-id",  
+				        "fields" : [
+   						{"name" : "value"}
+					]
+
+                                },
+				{
+					"name" : "card-type",  
+				        "fields" : [
+   						{"name" : "value"}
+					]
+
+                                },
+				{
+					"name" : "ps-type",  
+				        "fields" : [
+   						{"name" : "value"}
+					]
+
+                                },
+				{"name" : "shelf-num"},
+				
+				
+				{
+					"name" : "supply-type",  
+				        "fields" : [
+   						{"name" : "value"}
+					]
+
+                                },
+				{
+					"name" : "input-voltage",  
+				        "fields" : [
+   						{"name" : "value"}
+					]
+
+                                },
+				{
+					"name" : "input-current",  
+				        "fields" : [
+   						{"name" : "value"}
+					]
+
+                                },
+				{
+					"name" : "output-voltage",  
+				        "fields" : [
+   						{"name" : "value"}
+					]
+
+                                },
+				{
+					"name" : "output-current",  
+				        "fields" : [
+   						{"name" : "value"}
+					]
+
+                                },
+				{
+					"name" : "status",  
+				        "fields" : [
+   						{"name" : "value"}
+					]
+
+                                },
+				{
+					"name" : "input-power-to-ps",  
+				        "fields" : [
+   						{"name" : "value"}
+					]
+
+                                },
+				{
+					"name" : "input-current-to-ps",  
+				        "fields" : [
+   						{"name" : "value"}
+					]
+
+                                },
+				{
+					"name" : "output-power-from-ps",  
+				        "fields" : [
+   						{"name" : "value"}
+					]
+
+                                },
+					{
+					"name" : "output-current-from-ps",  
+				        "fields" : [
+   						{"name" : "value"}
+					]
+
+                                },
+				{"name" : "power-allocated"},
+				{
+					"name" : "power-consumed",  
+				        "fields" : [
+   						{"name" : "value"}
+					]
+
+                                },
+				{
+					"name" : "power-status",  
+				        "fields" : [
+   						{"name" : "value"}
+					]
+
+                                },
+				{
+					"name" : "confgd-power-redundancy-mode",  
+				        "fields" : [
+   						{"name" : "value"}
+					]
+
+                                },
+				{"name" : "usable-power-capacity"},
+				{"name" : "protection-power-capacity"},
+				{"name" : "power-resrv-and-alloc"},
+				{"name" : "system-power-used"},
+				{"name" : "system-power-input"},
+				{"name" : "power-level"},
+				{"name" : "output-header"},
+				{"name" : "output-footer"},
+				{"name" : "ps-sum-footer"}
+
+
+			]
+		}
+	},
+	{
+		"basepath" : "Cisco-IOS-XR-sysadmin-envmon-ui:envmon/environment/oper/fan/location/fan_attributes",
+		"spec" : {
+			"fields" : [
+				{"name" : "location", "tag" : true},
+				{"name" : "logical-slot", "tag": true},
+				{
+					"name" : "print-fan-header",  
+				        "fields" : [
+   						{"name" : "value"}
+					]
+
+                                },
+				{
+					"name" : "fru-pid",  
+				        "fields" : [
+   						{"name" : "value"}
+					]
+
+                                },
+				{
+					"name" : "fans-speed",  
+				        "fields" : [
+   						{"name" : "value"}
+					]
+
+                                },
+				{"name" : "fan-header"},
+				{
+					"name" : "location",  
+				        "fields" : [
+   						{"name" : "value"}
+					]
+
+                                },
+				{"name" : "speed-space"}
+
+			]
+		}
+	},
 	{
 		"basepath" : "Cisco-IOS-XR-infra-statsd-oper:infra-statistics/interfaces/interface/latest/generic-counters",
 		"spec" : {
