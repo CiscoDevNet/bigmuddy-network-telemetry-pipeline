@@ -1,12 +1,12 @@
 # InfluxDB Client
 
-[![GoDoc](https://godoc.org/github.com/influxdata/influxdb?status.svg)](http://godoc.org/github.com/influxdata/influxdb/client/v2)
+[![GoDoc](https://godoc.org/github.com/influxdata/influxdb?status.svg)](http://godoc.org/github.com/influxdata/influxdb1-client/v2)
 
 ## Description
 
 **NOTE:** The Go client library now has a "v2" version, with the old version
 being deprecated. The new version can be imported at
-`import "github.com/influxdata/influxdb/client/v2"`. It is not backwards-compatible.
+`import "github.com/influxdata/influxdb1-client/v2"`. It is not backwards-compatible.
 
 A Go client library written and maintained by the **InfluxDB** team.
 This package provides convenience functions to read and write time series data.
@@ -52,7 +52,7 @@ import (
 	"log"
 	"time"
 
-	"github.com/influxdata/influxdb/client/v2"
+	"github.com/influxdata/influxdb1-client/v2"
 )
 
 const (
@@ -283,7 +283,7 @@ cause fields to have differing timestamps when processed by the server.
 ## Go Docs
 
 Please refer to
-[http://godoc.org/github.com/influxdata/influxdb/client/v2](http://godoc.org/github.com/influxdata/influxdb/client/v2)
+[http://godoc.org/github.com/influxdata/influxdb1-client/v2](http://godoc.org/github.com/influxdata/influxdb1-client/v2)
 for documentation.
 
 ## See Also

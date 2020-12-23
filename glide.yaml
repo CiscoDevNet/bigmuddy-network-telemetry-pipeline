@@ -1,7 +1,7 @@
 package: bigmuddy-network-telemetry-pipeline
 import:
 - package: github.com/Shopify/sarama
-- package: github.com/Sirupsen/logrus
+- package: github.com/sirupsen/logrus
 - package: github.com/dlintw/goconf
 - package: github.com/evalphobia/logrus_fluent
 - package: github.com/golang/protobuf

@@ -13,7 +13,7 @@ package main
 // the aim of having stats scraped by prometheus.
 //
 import (
-	log "github.com/Sirupsen/logrus"
+	log "github.com/sirupsen/logrus"
 	"github.com/prometheus/client_golang/prometheus"
 	"net/http"
 )

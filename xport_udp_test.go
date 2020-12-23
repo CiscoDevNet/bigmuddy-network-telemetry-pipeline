@@ -4,7 +4,7 @@ import (
 	"bytes"
 	"encoding/binary"
 	"fmt"
-	log "github.com/Sirupsen/logrus"
+	log "github.com/sirupsen/logrus"
 	samples "github.com/cisco/bigmuddy-network-telemetry-pipeline/mdt_msg_samples"
 	"github.com/dlintw/goconf"
 	"net"

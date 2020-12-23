@@ -12,7 +12,7 @@ package main
 import (
 	"encoding/hex"
 	"encoding/json"
-	log "github.com/Sirupsen/logrus"
+	log "github.com/sirupsen/logrus"
 	"io"
 	"net"
 	"sync"

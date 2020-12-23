@@ -5,7 +5,7 @@ import (
 	"strconv"
 	"time"
 
-	influx "github.com/influxdata/influxdb/client/v2"
+	influx "github.com/influxdata/influxdb1-client/v2"
 )
 
 // reporting.go contains functions to emit tags and points from various parts of stressClient

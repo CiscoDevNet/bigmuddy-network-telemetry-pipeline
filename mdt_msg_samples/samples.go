@@ -13,7 +13,7 @@ package mdt_msg_samples
 import (
 	"bufio"
 	"encoding/json"
-	log "github.com/Sirupsen/logrus"
+	log "github.com/sirupsen/logrus"
 	telem "github.com/cisco/bigmuddy-network-telemetry-proto/proto_go"
 	"github.com/golang/protobuf/jsonpb"
 	"github.com/golang/protobuf/proto"

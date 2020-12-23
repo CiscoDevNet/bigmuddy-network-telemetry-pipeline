@@ -1,4 +1,4 @@
-package client // import "github.com/influxdata/influxdb/client/v2"
+package client // import "github.com/influxdata/influxdb1-client/v2"
 
 import (
 	"bytes"
@@ -9,6 +9,7 @@ import (
 	"io/ioutil"
 	"net/http"
 	"net/url"
+	"path"
 	"time"
 
 	"github.com/influxdata/influxdb/models"
@@ -361,7 +362,7 @@ func (c *client) Write(bp BatchPoints) error {
 	}
 
 	u := c.url
-	u.Path = "write"
+	u.Path = path.Join(u.Path, "write")
 	req, err := http.NewRequest("POST", u.String(), &b)
 	if err != nil {
 		return err

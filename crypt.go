@@ -20,7 +20,7 @@ import (
 	"fmt"
 	"io/ioutil"
 
-	log "github.com/Sirupsen/logrus"
+	log "github.com/sirupsen/logrus"
 )
 
 func collect_pkey(pemFile string) (err error, key *rsa.PrivateKey) {

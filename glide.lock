@@ -656,7 +656,7 @@ imports:
   version: 1f30fe9094a513ce4c700b9a54458bbb0c96996c
 - name: github.com/Shopify/sarama
   version: 0fb560e5f7fbcaee2f75e3c34174320709f69944
-- name: github.com/Sirupsen/logrus
+- name: github.com/sirupsen/logrus
   version: 881bee4e20a5d11a6a88a5667c6f292072ac1963
 - name: github.com/tinylib/msgp
   version: 38a6f61a768dc24552dad94611923841b53acc4f

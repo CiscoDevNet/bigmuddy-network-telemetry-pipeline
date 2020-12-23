@@ -13,7 +13,7 @@ import (
 	"encoding/hex"
 	"encoding/json"
 	_ "fmt"
-	log "github.com/Sirupsen/logrus"
+	log "github.com/sirupsen/logrus"
 	"github.com/prometheus/client_golang/prometheus"
 	"net"
 	"time"

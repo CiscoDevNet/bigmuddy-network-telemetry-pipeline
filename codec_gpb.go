@@ -15,7 +15,7 @@ import (
 	"encoding/base64"
 	"encoding/json"
 	"fmt"
-	log "github.com/Sirupsen/logrus"
+	log "github.com/sirupsen/logrus"
 	telem "github.com/cisco/bigmuddy-network-telemetry-proto/proto_go"
 	pdt "github.com/cisco/bigmuddy-network-telemetry-proto/proto_go/old/telemetry"
 	"github.com/golang/protobuf/jsonpb"
