@@ -1,7 +1,7 @@
 package logrus_fluent
 
 import (
-	"github.com/Sirupsen/logrus"
+	"github.com/sirupsen/logrus"
 	"github.com/fluent/fluent-logger-golang/fluent"
 )
 

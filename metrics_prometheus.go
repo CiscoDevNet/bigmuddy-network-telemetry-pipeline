@@ -13,13 +13,14 @@ import (
 	"bufio"
 	"bytes"
 	"fmt"
-	log "github.com/Sirupsen/logrus"
 	"hash/fnv"
 	"net/http"
 	"net/url"
 	"os"
 	"regexp"
 	"strings"
+
+	log "github.com/sirupsen/logrus"
 )
 
 //
@@ -171,8 +172,7 @@ func (p *metricsPrometheusOutputHandler) buildMetric(
 	} else {
 		delim = " "
 	}
-
-	buf.WriteString(fmt.Sprintf("%s%v %v\n", delim, sensor.val, ts))
+	buf.WriteString(fmt.Sprintf("%s%v\n", delim, sensor.val))
 }
 
 func (p *metricsPrometheusOutputHandler) worker(m *metricsOutputModule) {

@@ -21,7 +21,7 @@ import (
 	"encoding/hex"
 	"encoding/json"
 	"fmt"
-	log "github.com/Sirupsen/logrus"
+	log "github.com/sirupsen/logrus"
 	dialin "github.com/cisco/bigmuddy-network-telemetry-proto/proto_go/mdt_grpc_dialin"
 	dialout "github.com/cisco/bigmuddy-network-telemetry-proto/proto_go/mdt_grpc_dialout"
 	"golang.org/x/net/context"

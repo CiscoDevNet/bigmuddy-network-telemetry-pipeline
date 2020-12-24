@@ -15,7 +15,7 @@ import (
 	"bufio"
 	"encoding/json"
 	"fmt"
-	log "github.com/Sirupsen/logrus"
+	log "github.com/sirupsen/logrus"
 	"github.com/prometheus/client_golang/prometheus"
 	"io/ioutil"
 	"os"

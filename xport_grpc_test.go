@@ -10,7 +10,7 @@ package main
 
 import (
 	"fmt"
-	log "github.com/Sirupsen/logrus"
+	log "github.com/sirupsen/logrus"
 	telem "github.com/cisco/bigmuddy-network-telemetry-proto/proto_go"
 	dialin "github.com/cisco/bigmuddy-network-telemetry-proto/proto_go/mdt_grpc_dialin"
 	"github.com/golang/protobuf/proto"

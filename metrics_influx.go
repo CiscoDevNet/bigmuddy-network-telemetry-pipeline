@@ -25,11 +25,12 @@ package main
 import (
 	"bufio"
 	"fmt"
-	log "github.com/Sirupsen/logrus"
-	"github.com/influxdata/influxdb/client/v2"
 	"os"
 	"runtime"
 	"time"
+
+	client "github.com/influxdata/influxdb1-client/v2"
+	log "github.com/sirupsen/logrus"
 )
 
 const (
@@ -127,11 +128,11 @@ func (w *metricsInfluxOutputWorker) worker(m *metricsOutputModule) {
 		//
 		// Add tls config here.
 		if !outputHandler.standalone {
-			var user, passw string
-			user, passw, err = outputHandler.auth.getUP()
+			// var user, passw string
+			// user, passw, err = outputHandler.auth.getUP()
 			if err == nil {
 				influxClient, err = client.NewHTTPClient(client.HTTPConfig{
-					Addr: w.influxServer, Username: user, Password: passw,
+					Addr: w.influxServer,
 				})
 			}
 		}

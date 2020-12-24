@@ -11,7 +11,6 @@
 package main
 
 import (
-	"bufio"
 	"crypto/rand"
 	"crypto/rsa"
 	"crypto/sha256"
@@ -19,10 +18,9 @@ import (
 	"encoding/base64"
 	"encoding/pem"
 	"fmt"
-	log "github.com/Sirupsen/logrus"
-	"golang.org/x/crypto/ssh/terminal"
 	"io/ioutil"
-	"os"
+
+	log "github.com/sirupsen/logrus"
 )
 
 func collect_pkey(pemFile string) (err error, key *rsa.PrivateKey) {
@@ -96,34 +94,36 @@ type cryptUserPasswordCollector struct {
 func cryptCollect(name string, authenticator string) (
 	error, string, string) {
 
-	b := bufio.NewReader(os.Stdin)
-	for {
-		fmt.Printf("\nCRYPT Client [%s],[%v]\n Enter username: ",
-			name, authenticator)
-		user, more, err := b.ReadLine()
-		if more {
-			fmt.Printf("Username too long")
-			continue
-		}
-		if err != nil {
-			fmt.Printf("Failed to collect username")
-			continue
-		}
-		if string(user) == "" {
-			fmt.Println("Empty username, try again")
-			continue
-		}
-		fmt.Printf(" Enter password: ")
-		pw, err := terminal.ReadPassword(int(os.Stdin.Fd()))
-		if err != nil {
-			fmt.Printf("Failed to collect password")
-			continue
-		}
+	// b := bufio.NewReader(os.Stdin)
+	// for {
+	// 	fmt.Printf("\nCRYPT Client [%s],[%v]\n Enter username: ",
+	// 		name, authenticator)
+	// 	user, more, err := b.ReadLine()
+	// 	if more {
+	// 		fmt.Printf("Username too long")
+	// 		continue
+	// 	}
+	// 	if err != nil {
+	// 		fmt.Printf("Failed to collect username")
+	// 		continue
+	// 	}
+	// 	if string(user) == "" {
+	// 		fmt.Println("Empty username, try again")
+	// 		continue
+	// 	}
+	// 	fmt.Printf(" Enter password: ")
+	// 	pw, err := terminal.ReadPassword(int(os.Stdin.Fd()))
+	// 	if err != nil {
+	// 		fmt.Printf("Failed to collect password")
+	// 		continue
+	// 	}
 
-		fmt.Printf("\n")
+	// 	fmt.Printf("\n")
 
-		return nil, string(user), string(pw)
-	}
+	// 	return nil, string(user), string(pw)
+	// }
+	return nil, string("admin"), string("admin")
+
 }
 
 func (c *cryptUserPasswordCollector) getUP() (string, string, error) {
