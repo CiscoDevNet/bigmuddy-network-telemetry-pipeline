@@ -1,0 +1,7 @@
+global:
+  scrape_interval: 10s
+scrape_configs:
+  - job_name: network-telemetry
+    static_configs: [{targets: ["pipeline:9273"]}]
+  - job_name: pipeline-self
+    static_configs: [{targets: ["pipeline:9180"]}]

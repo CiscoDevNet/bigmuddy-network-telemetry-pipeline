@@ -1,0 +1,37 @@
+# Local lab: pipeline + Prometheus + Grafana.
+#
+#   cd deploy/compose && docker compose up --build
+#
+# Point IOS XR MDT dial-out at <host>:57500 (gRPC) or <host>:5432 (TCP), or
+# add gNMI targets to pipeline.yaml. Grafana: http://localhost:3000 (admin/admin)
+services:
+  pipeline:
+    build: ../..
+    command: ["-config", "/etc/pipeline/pipeline.yaml"]
+    volumes:
+      - ./pipeline.yaml:/etc/pipeline/pipeline.yaml:ro
+    environment:
+      GNMI_PASSWORD: ${GNMI_PASSWORD:-admin}
+    ports:
+      - "57500:57500"   # MDT gRPC dial-out
+      - "5432:5432"     # MDT TCP dial-out
+      - "9180:9180"     # admin: /metrics /healthz /readyz
+      - "9273:9273"     # Prometheus exporter
+    restart: unless-stopped
+
+  prometheus:
+    image: prom/prometheus:v3.4.0
+    command:
+      - --config.file=/etc/prometheus/prometheus.yml
+      - --web.enable-otlp-receiver
+    volumes:
+      - ./prometheus.yml:/etc/prometheus/prometheus.yml:ro
+    ports: ["9090:9090"]
+
+  grafana:
+    image: grafana/grafana:12.0.0
+    environment:
+      GF_AUTH_ANONYMOUS_ENABLED: "true"
+    volumes:
+      - ./grafana/datasources.yml:/etc/grafana/provisioning/datasources/datasources.yml:ro
+    ports: ["3000:3000"]

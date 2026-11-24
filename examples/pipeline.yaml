@@ -1,0 +1,158 @@
+# Annotated reference configuration. Every key is shown; most are optional.
+#
+# ${VAR} and ${VAR:-default} are expanded from the environment before
+# parsing. Referencing an unset variable without a default is an error, so a
+# missing secret is caught at start-up. Use "$$" for a literal "$".
+#
+# Validate without starting:  pipeline -config pipeline.yaml -check
+
+log:
+  level: info          # debug | info | warn | error
+  format: json         # json | text
+
+admin:
+  listen: ":9180"      # /metrics (self-monitoring), /healthz, /readyz
+  pprof: false         # /debug/pprof
+
+router:
+  queue_size: 1024     # batches buffered between inputs and processors.
+                       # When full, inputs block -> gRPC/TCP flow control
+                       # pushes back on devices instead of losing data.
+
+# ---------------------------------------------------------------------------
+# Inputs
+# ---------------------------------------------------------------------------
+inputs:
+  # gNMI dial-in: the pipeline connects to each device and subscribes.
+  # Works with Cisco IOS XR / NX-OS / IOS XE, Juniper, Arista, Nokia, SONiC...
+  - name: core
+    type: gnmi
+    targets:
+      - address: core1.example.net:57400
+        name: core1                       # source tag (default: host part)
+      - core2.example.net:57400           # plain string form
+    username: telemetry
+    password: ${GNMI_PASSWORD}            # or password_file: /run/secrets/gnmi
+    tls:
+      enabled: true
+      # ca_file: /etc/pipeline/ca.pem     # verify device certs (default: system roots)
+      # cert_file / key_file for mTLS; server_name to override SNI
+      insecure_skip_verify: false
+    encoding: proto                       # proto | json_ietf | json
+    # target: ""                          # gNMI prefix target (for gateways)
+    # updates_only: false
+    # compression: gzip
+    redial_min: 1s                        # reconnect backoff (jittered)
+    redial_max: 60s
+    subscriptions:
+      - name: if-counters
+        path: /interfaces/interface/state/counters
+        mode: sample                      # sample | on_change | target_defined
+        sample_interval: 10s
+      - name: if-status
+        path: /interfaces/interface/state/oper-status
+        mode: on_change
+      - name: bgp
+        origin: openconfig
+        path: /network-instances/network-instance/protocols/protocol/bgp/neighbors/neighbor/state
+        mode: sample
+        sample_interval: 30s
+        # heartbeat_interval: 5m
+        # suppress_redundant: true
+
+  # Cisco MDT dial-out (devices connect to us). One input per transport.
+  - name: xr-grpc
+    type: cisco_mdt
+    transport: grpc                       # grpc | tcp | udp
+    listen: ":57500"
+    # tls: {enabled: true, cert_file: ..., key_file: ..., ca_file: ... (mTLS)}
+    # max_message_size: 16777216
+  # - name: xr-tcp
+  #   type: cisco_mdt
+  #   transport: tcp
+  #   listen: ":5432"
+  #   idle_timeout: 5m
+
+# ---------------------------------------------------------------------------
+# Processors run in order on every metric before fan-out to outputs.
+# ---------------------------------------------------------------------------
+processors:
+  - type: filter
+    # include_names: ["interfaces", "bgp"]      # regex on metric name
+    exclude_names: ["/system/processes"]
+    # include_tags: {source: ["^core"]}
+    # exclude_tags: {interface_name: ["^Null", "^Loopback"]}
+    # keep_fields: ["counters/"]
+    drop_fields: ["description$"]
+    # drop_string_fields: false
+
+  - type: tags
+    add: {env: prod}
+    sources:                                    # inventory enrichment
+      core1: {site: dfw1, role: spine}
+      core2: {site: iad2, role: spine}
+    # rename: {interface-name: interface_name}  # align Cisco native & OpenConfig
+    # drop: [subscription]
+
+  # - type: rename
+  #   names:  [{match: "^openconfig:", replace: ""}]
+  #   fields: [{match: "^state/counters/", replace: ""}]
+
+# ---------------------------------------------------------------------------
+# Outputs. Each has its own queue and worker; a slow output drops (and
+# counts) its own overflow without affecting the others. Delivery keys:
+#   queue_size (100000), batch_size (1000), flush_interval (1s),
+#   max_retries (3; -1 disables), write_timeout (10s)
+# ---------------------------------------------------------------------------
+outputs:
+  - name: prom
+    type: prometheus
+    listen: ":9273"
+    path: /metrics
+    expiry: 5m                 # forget series not updated for this long
+    string_fields: info        # drop | info  (oper-status -> *_info{value="UP"} 1)
+    # namespace: net
+    # export_timestamps: false
+
+  - name: otel
+    type: otlp
+    protocol: grpc             # grpc (host:port) | http (full URL)
+    endpoint: otel-collector:4317
+    compression: gzip
+    # headers: {Authorization: "Bearer ${OTLP_TOKEN}"}
+    # tls: {enabled: true}
+    resource_attributes: {deployment.environment: prod}
+    batch_size: 5000
+
+  # Prometheus 3.x native OTLP ingestion (start Prometheus with
+  # --web.enable-otlp-receiver):
+  # - name: prom-otlp
+  #   type: otlp
+  #   protocol: http
+  #   endpoint: http://prometheus:9090/api/v1/otlp/v1/metrics
+
+  - name: influx
+    type: influxdb
+    url: http://influxdb:8086
+    org: netops                # InfluxDB 2.x / 3.x
+    bucket: telemetry
+    token: ${INFLUX_TOKEN}     # or token_file
+    # database: telemetry      # InfluxDB 1.x instead of org/bucket
+    # retention_policy: autogen
+    # username / password / password_file
+    batch_size: 5000
+    flush_interval: 2s
+
+  - name: bus
+    type: kafka
+    brokers: [kafka-1:9092, kafka-2:9092]
+    topic: network.telemetry
+    key: source                # source | name | none
+    compression: zstd          # zstd | lz4 | snappy | gzip | none
+    acks: all                  # all (idempotent) | leader | none
+    # sasl: {mechanism: SCRAM-SHA-512, username: pipeline, password: ${KAFKA_PASSWORD}}
+    # tls: {enabled: true}
+
+  # - name: debug
+  #   type: file
+  #   path: "-"                # stdout, or a file path (JSON lines)

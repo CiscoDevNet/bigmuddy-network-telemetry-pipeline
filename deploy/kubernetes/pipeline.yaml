@@ -1,0 +1,100 @@
+# Kubernetes deployment. Create the secret first:
+#   kubectl create secret generic telemetry-pipeline --from-literal=gnmi-password=...
+#
+# Scaling: gNMI dial-in targets should be partitioned across replicas (one
+# ConfigMap per shard, or one Deployment per site). MDT dial-out is
+# stateless per connection, so the dial-out Service can front N replicas.
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: telemetry-pipeline
+data:
+  pipeline.yaml: |
+    log: {level: info, format: json}
+    admin: {listen: ":9180"}
+    inputs:
+      - {name: dialout, type: cisco_mdt, transport: grpc, listen: ":57500"}
+      - name: gnmi
+        type: gnmi
+        targets: ["core1.example.net:57400"]
+        username: telemetry
+        password_file: /run/secrets/pipeline/gnmi-password
+        tls: {enabled: true}
+        subscriptions:
+          - {name: if, path: /interfaces/interface/state/counters, sample_interval: 10s}
+    outputs:
+      - {name: prom, type: prometheus, listen: ":9273", string_fields: info}
+      - {name: otel, type: otlp, endpoint: "otel-collector.observability:4317"}
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: telemetry-pipeline
+  labels: {app: telemetry-pipeline}
+spec:
+  replicas: 1
+  selector:
+    matchLabels: {app: telemetry-pipeline}
+  template:
+    metadata:
+      labels: {app: telemetry-pipeline}
+    spec:
+      terminationGracePeriodSeconds: 45   # > pipeline drain timeout (30s)
+      securityContext:
+        runAsNonRoot: true
+        seccompProfile: {type: RuntimeDefault}
+      containers:
+        - name: pipeline
+          image: ghcr.io/sangmeshcp/telemetry-pipeline:latest
+          args: ["-config", "/etc/pipeline/pipeline.yaml"]
+          ports:
+            - {name: admin, containerPort: 9180}
+            - {name: prom, containerPort: 9273}
+            - {name: mdt-grpc, containerPort: 57500}
+          readinessProbe:
+            httpGet: {path: /readyz, port: admin}
+            periodSeconds: 5
+          livenessProbe:
+            httpGet: {path: /healthz, port: admin}
+            periodSeconds: 10
+          resources:
+            requests: {cpu: 250m, memory: 256Mi}
+            limits: {memory: 1Gi}
+          securityContext:
+            allowPrivilegeEscalation: false
+            readOnlyRootFilesystem: true
+            capabilities: {drop: [ALL]}
+          volumeMounts:
+            - {name: config, mountPath: /etc/pipeline, readOnly: true}
+            - {name: secrets, mountPath: /run/secrets/pipeline, readOnly: true}
+      volumes:
+        - name: config
+          configMap: {name: telemetry-pipeline}
+        - name: secrets
+          secret: {secretName: telemetry-pipeline}
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: telemetry-pipeline
+  labels: {app: telemetry-pipeline}
+  annotations:
+    prometheus.io/scrape: "true"
+    prometheus.io/port: "9273"
+spec:
+  selector: {app: telemetry-pipeline}
+  ports:
+    - {name: admin, port: 9180, targetPort: admin}
+    - {name: prom, port: 9273, targetPort: prom}
+---
+# Devices outside the cluster need a stable address for dial-out.
+apiVersion: v1
+kind: Service
+metadata:
+  name: telemetry-pipeline-dialout
+spec:
+  type: LoadBalancer
+  externalTrafficPolicy: Local    # preserve device source IPs
+  selector: {app: telemetry-pipeline}
+  ports:
+    - {name: mdt-grpc, port: 57500, targetPort: mdt-grpc}

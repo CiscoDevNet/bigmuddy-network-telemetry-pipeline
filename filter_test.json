@@ -1,7 +1,0 @@
-{"node_id":"{{.Node_id}}",
- "subscription":"{{.Subscription}}",
- "encoding_path":"{{.Encoding_path}}",
- "msg_timestamp":"{{.Msg_timestamp}}",
- "data":[{{range $index,$element := .Data}}
-		 {{if $index}}, {"timestamp":{{$element.Timestamp}},"ifname":{{index .Keys "interface-name"}},"pktsout":{{index .Content "packets-sent"}}}{{else}}{"timestamp":{{$element.Timestamp}},"ifname":{{index .Keys "interface-name"}},"pktsout":{{index .Content "packets-sent"}}}{{end}}{{end}}]}
- 

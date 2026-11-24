@@ -1,0 +1,15 @@
+# Minimal configuration baked into the container image: accept Cisco MDT
+# gRPC dial-out on :57500 and expose everything on a Prometheus endpoint.
+# Mount your own file over /etc/pipeline/pipeline.yaml for real use.
+log: {level: info, format: json}
+admin: {listen: ":9180"}
+inputs:
+  - name: dialout
+    type: cisco_mdt
+    transport: grpc
+    listen: ":57500"
+outputs:
+  - name: prom
+    type: prometheus
+    listen: ":9273"
+    string_fields: info

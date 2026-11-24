@@ -1,0 +1,19 @@
+log: {level: info, format: text}
+admin: {listen: ":9180"}
+inputs:
+  - {name: xr-grpc, type: cisco_mdt, transport: grpc, listen: ":57500"}
+  - {name: xr-tcp, type: cisco_mdt, transport: tcp, listen: ":5432"}
+  # - name: lab
+  #   type: gnmi
+  #   targets: ["192.0.2.1:57400"]
+  #   username: admin
+  #   password: ${GNMI_PASSWORD}
+  #   tls: {enabled: true, insecure_skip_verify: true}   # lab only
+  #   subscriptions:
+  #     - {name: if, path: /interfaces/interface/state/counters, sample_interval: 10s}
+  #     - {name: oper, path: /interfaces/interface/state/oper-status, mode: on_change}
+outputs:
+  # Pull: Prometheus scrapes pipeline:9273
+  - {name: prom, type: prometheus, listen: ":9273", string_fields: info}
+  # Push: alternatively, send via OTLP into Prometheus' native receiver
+  # - {name: prom-otlp, type: otlp, protocol: http, endpoint: "http://prometheus:9090/api/v1/otlp/v1/metrics"}
